@@ -12,3 +12,19 @@
 <p> Parris Lawrence-Jackson: Tester </p>
 <p> Kameron Smith + Tristan McGregor (not responding) </p>
 
+<h3> Deliverables for team 3 in progress.. </h3>
+<br>
+<table>
+    <tr>
+        <th>Sprint 1</th>
+        <th>Sprint 2</th>
+        <th>Sprint 3</th>
+        <th>Sprint 4</th>
+    </tr>
+    <tr>
+        <td>Intro in MS Teams</td>
+        <td></td>
+
+    </tr>
+
+</table>
