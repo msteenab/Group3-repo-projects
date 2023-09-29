@@ -13,7 +13,6 @@
 <p> Kameron Smith + Tristan McGregor (not responding) </p>
 
 <h3> Deliverables for team 3 in progress.. </h3>
-<br>
 <table>
     <tr>
         <th>Sprint 1</th>
