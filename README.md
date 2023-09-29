@@ -23,7 +23,6 @@
     <tr>
         <td>Intro in MS Teams</td>
         <td></td>
-
     </tr>
 
 </table>
