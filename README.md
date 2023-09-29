@@ -25,14 +25,16 @@ This collaborative project involves team members designing a series of Python-ba
 <h3> Deliverables for team 3 in progress.. </h3>
 <table>
     <tr>
-        <th>Sprint 1</th>
+        <th>Sprint 1 | 23 Sept - 4 Oct</th>
         <th>Sprint 2</th>
         <th>Sprint 3</th>
         <th>Sprint 4</th>
     </tr>
     <tr>
         <td>Intro in MS Teams</td>
-        <td></td>
+    </tr>
+    <tr>
+        <td>Peer Evaluations</td>
     </tr>
 
 </table>
