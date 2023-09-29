@@ -1,6 +1,7 @@
-# Team 3
+<h1> Team 3 </h1>
 
-# Roles for each team member: 
+<h2> Roles for each team member: </h2>
+
 <!-- Using HTML for the documentation | Can be changed -->
 <p> Chris Barlow: Project manager </p>
 <p> Zineb Gamra: Document Writer </p>
