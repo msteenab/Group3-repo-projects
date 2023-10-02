@@ -12,8 +12,8 @@ This collaborative project involves team members designing a series of Python-ba
 <p> John Moukas: Developer </p>
 <p> Kristena Bridges (Teena): Tester, Back up Developer </p>
 <p> Parris Lawrence-Jackson: Tester </p>
-<p> Kameron Smith: </p>
-<p> Tristan McGregor: </p>
+<p> Kameron Smith: Developer </p>
+<p> Tristan McGregor: Document Writer </p>
 
 <h2> Objectives </h2>
 
