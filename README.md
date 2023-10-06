@@ -1,28 +1,27 @@
-<h2> Project Overview </h2>
+## Project Overview
 
 This collaborative project involves team members designing a series of Python-based labs centered around various software testing techniques. These labs emphasize code creation, comprehensive documentation, and thorough evaluation. Topics covered range from web automation using Selenium and Playwright to best practices in Behavior-Driven Development (BDD) and Test-Driven Development (TDD). Additionally, the project entails creating a Requirements Traceability Matrix for specified documents, including SRS, HLD, LLD, and Test Plan.
 
-<h2> Team Members: </h2>
+## Team Members:
 
-<!-- Using HTML for the documentation | Can be changed -->
-<p> Chris Barlow: Project manager </p>
-<p> Zineb Gamra: Document Writer </p>
-<p> Aliyah Lewis: Developer, Document Writer. </p>
-<p> Dimetri Reese: Developer, tester </p>
-<p> John Moukas: Developer </p>
-<p> Kristena Bridges (Teena): Tester, Back up Developer </p>
-<p> Parris Lawrence-Jackson: Tester </p>
-<p> Kameron Smith: Developer </p>
-<p> Tristan McGregor: Document Writer </p>
+Chris Barlow: Project manager
+Zineb Gamra: Document Writer
+Aliyah Lewis: Developer, Document Writer
+Dimetri Reese: Developer, tester
+John Moukas: Developer
+Kristena Bridges (Teena): Tester, Back up Developer
+Parris Lawrence-Jackson: Tester
+Kameron Smith: Developer
+Tristan McGregor: Document Writer
 
-<h2> Objectives </h2>
+## Objectives
 
-<p>- Develop Comprehensive Labs</p> 
-<p>- Explore Testing Techniques </p>
-<p>- Establish a Requirements Traceability Matrix </p>
-<p>- Promote Collaboration and Knowledge Sharing </p>
+- Develop Comprehensive Labs
+- Explore Testing Techniques
+- Establish a Requirements Traceability Matrix
+- Promote Collaboration and Knowledge Sharing
 
-<h3> Deliverables for team 3 in progress.. </h3>
+### Deliverables for team 3 in progress..
 <table>
     <tr>
         <th>Sprint 1 | 23 Sept - 4 Oct</th>
