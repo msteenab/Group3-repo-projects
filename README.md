@@ -45,3 +45,6 @@ Tristan McGregor: Document Writer
     </tr>
 
 </table>
+
+### Restaurant Flowchart
+![flowchart](https://github.com/3osmic/Group3-repo-projects/blob/Selenium/flowchart.png?raw=true)
