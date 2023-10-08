@@ -45,3 +45,6 @@ Tristan McGregor: Document Writer
     </tr>
 
 </table>
+
+### Restaurant Flowchart
+![flowchart](file:///C:/Users/aliya/Documents/GitHub/Group3-repo-projects/flowchart.png)
