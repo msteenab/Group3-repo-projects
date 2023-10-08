@@ -1,78 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    scroll-padding-top: 4rem;
-    list-style: none;
-    text-decoration: none;
-
-}
-
-*::selection {
-    background: var(--main-color);
-    color: #fff;
-
-}
-
-:root {
-    --main-color: #ffb411;
-    --text-color: #1e1c2a;
-    --big-color: #fff;
-
-    --big-font: 4rem;
-    --h2-font: 2.24rem;
-    --p-font: 0.9rem;
-
+header,
+section,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+    display: block;
 }
 
 body {
-    color: var(--text-color);
-    background: var(--big-color);
+    color: #666666;
+    background-color: #f9f8f6;
+    background-image: url("food-pic.jpg");
+    background-position: center;
+    font-family: Georgia, Times, serif;
+    line-height: 1.4em;
+    margin: 0px;
 
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--big-color);
-    padding: x 100 px;
-    box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
-}
+.wrapper {
+    width: 940px;
+    margin: 20px auto 20px auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;
 
-.logo {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--main-color);
-}
-
-.navbar {
-    display: flex;
-
-}
-
-.navbar a {
-    font-size: 1rem;
-    padding: 10px 20px;
-    color: var(--text-color);
-    font-weight: 500;
-}
-
-.navbar a:hover{
-    color: var(--main-color);
-}
-
-#menu-icon{
-    font-size: 2rem;
-    cursor: pointer;
-    display: none;
 }
