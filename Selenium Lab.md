@@ -16,7 +16,7 @@ _______________________________________________________________________
 You will need the following in order for your tests to perform correctly 
 
 - Install a web browser to run the web application
-    This can be:
+    - This can be:
         - Firefox (Recommended)
         - Chrome
         - Microsoft Edge
