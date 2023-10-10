@@ -163,3 +163,8 @@ footer {
     height: 40px;
 
 }
+
+section.menu {
+    text-align: center;
+    font-weight: bold;
+}
