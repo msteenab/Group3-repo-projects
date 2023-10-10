@@ -4,16 +4,33 @@ _______________________________________________________________________
 _______________________________________________________________________
 
 
-LAB 01	AUTOMATION WITH SELENIUM
-OBJECTIVES
+## LAB 01	AUTOMATION WITH SELENIUM
+### OBJECTIVES
 - Provide details on commands commonly used in Selenium
 - Create a Selenium Script
--
--
-BEFORE YOU GET STARTED
+- Automate browser actions for web application testing.
+- Understand and utilize Selenium WebDriver using Python.
+- Validate web application UI elements and functionalities.
 
-- GitHub account *add more details *
-- Python IDE * more details required * 
+## BEFORE YOU GET STARTED
+You will need the following in order for your tests to perform correctly 
+
+- Install a web browser to run the web application 
+*Tabspace* This can be:
+*Tabspace**Tabspace* - Firefox (Recommended)
+*Tabspace**Tabspace* - Chrome
+*Tabspace**Tabspace* - Microsoft Edge
+- Create a GitHub account
+*Tabspace* - Clone the GitHub repository
+
+### HOW TO CREATE A GITHUB ACCOUNT
+- Navigate to this page on how to create a GitHub account: https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account
+
+### HOW TO CLONE A GITHUB REPOSITORY
+- Navigate to this page on how to clone a GitHub repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+- Python IDE * more details required *
+
 
 GETTING STARTED
 
