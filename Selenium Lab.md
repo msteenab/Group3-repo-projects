@@ -15,13 +15,13 @@ _______________________________________________________________________
 ## BEFORE YOU GET STARTED
 You will need the following in order for your tests to perform correctly 
 
-- Install a web browser to run the web application 
-*Tabspace* This can be:
-*Tabspace**Tabspace* - Firefox (Recommended)
-*Tabspace**Tabspace* - Chrome
-*Tabspace**Tabspace* - Microsoft Edge
+- Install a web browser to run the web application
+    This can be:
+        - Firefox (Recommended)
+        - Chrome
+        - Microsoft Edge
 - Create a GitHub account
-*Tabspace* - Clone the GitHub repository
+    - Clone the GitHub repository
 
 ### HOW TO CREATE A GITHUB ACCOUNT
 - Navigate to this page on how to create a GitHub account: https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account
