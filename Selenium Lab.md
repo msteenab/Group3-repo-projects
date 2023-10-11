@@ -33,13 +33,16 @@ You will need the following in order for your tests to perform correctly
 Selenium is a great way to automate web interactions and perform automated browser testing. You can use selenium with multiple languages, but in this lab we will only focus on python. Down is a step-by-step guide to help you get started.
 
 ### Step 1: Install Python
-If you have not, you will need to install Python on your computer. To do so please navigate to Python official website to downoald the latest version: https://www.python.org/downloads/
+If you have not, you will need to install Python on your computer. To do so please navigate to Python official website to downoald the latest version: https://www.python.org/downloads/ 
+
 Note: Make sure to download the right file based on your OS, as well as adding Python to your system's PATH during installation.
 
 ### Step 2: Install Selenium
-You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:    pip install selenium  
+You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:    
+pip install selenium  
 
-( screenshot of the command should be added)     
+![pipCommand](https://github.com/3osmic/Group3-repo-projects/assets/113747615/e9cf1bf1-cda0-4ff6-83b5-e7f4389c208b)
+
 
 Once installed, a successfully installed message should be displayed.
 
@@ -55,18 +58,12 @@ Note: Download the appropriate driver for your browser and make sure to add the 
 For more platform options please visit the selenium official website, and scroll down to browsers.
 (https://www.selenium.dev/downloads/)
 
-Once Selenium is installed, you’re ready to create your first Selenium Script!
+
+Once Selenium is installed, you’re ready to create your first Selenium script!
 ### Step 4: Create Your First Selenium Script 
-Here is a simple Python script that opens a browser, navigates to a website and performs some action:	
+Here is a simple Python script that opens a browser, navigates to a website and performs some action with expected results:	
 
- (insert script Screenshot)
-
-- Start Session
-- Action on Browser
-- Request Browser information
-- Waiting Strategy
-- Finding an element
-- Action on Element
+![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
 
 
