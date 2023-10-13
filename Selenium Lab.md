@@ -23,7 +23,17 @@ _______________________________________________________________________
 - Your python is outdated.
 #### How do I fix this?:
 ##### Method 1 (Copy the path into your environment)
-1. 
+- First type in `python` into your windows search bar (there should be a version of python already installed onto your computer)
+
+![pythonSearch](img_2.png)
+
+- Right-click the version displayed and select `open file location` or click it on the right side of the panel
+
+![fileLocation](img_3.png)
+
+- Right-click on your python version once more and select `open file location`
+
+##### Method 2 (Re-install)
 
 
 ### PREREQUISITE
@@ -71,6 +81,8 @@ You can install Selenium using Python's package manager, pip. Open your command 
 
 Once installed, a successfully installed message should be displayed.
 
+- For more information on selenium, visit their website at: https://www.selenium.dev/
+
 ### Step 3: Download a Web Driver
 Selenium interacts with web browsers using drivers. You will need to download the appropriate driver for the web browser you want to automate. Such as Chrome, Firefox, and Edge.  
 Drivers can be found in the following URL's:	
@@ -90,7 +102,7 @@ Here is a simple Python script that opens a browser, navigates to a website and 
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
-### Class Diagram of Web Application Back-End Functionalities:
+### Class Diagram of Web Application's Back-End Functionalities:
 
 
 
