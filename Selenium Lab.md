@@ -59,6 +59,7 @@ The current supported versions for Selenium are:
 
 #### (IF YOU AlREADY HAVE PIP ON YOUR SYSTEM):
 If you already have pip installed on our system, you can upgrade it by using the following command in either the command line or terminal:
+
 ![pipUpgrade](img_1.png)
 
 ### Step 2: Install Selenium
