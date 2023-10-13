@@ -16,7 +16,7 @@ _______________________________________________________________________
 ### FAQ (Frequently Asked Questions)
 1. My command line is displaying this error message:
 
-![img.png](img.png)
+![pipError1](img.png)
 #### This error message is most likely due to:
 - Your environment not having the path to your python folder/scripts.
 - Your pip version not being in your "scripts" folder.
@@ -59,7 +59,7 @@ The current supported versions for Selenium are:
 
 #### (IF YOU AlREADY HAVE PIP ON YOUR SYSTEM):
 If you already have pip installed on our system, you can upgrade it by using the following command in either the command line or terminal:
-![pipUpgrade](file:///C:/Users/aliya/Documents/Classes%20For%20Summer%202023/CSC%20256/Screenshot%202023-10-13%20115546.png)
+![pipUpgrade](img_1.png)
 
 ### Step 2: Install Selenium
 You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:    
