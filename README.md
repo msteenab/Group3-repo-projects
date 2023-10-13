@@ -8,7 +8,7 @@ Chris Barlow: Project manager
 
 Zineb Gamra: Document Writer
 
-Aliyah Lewis: Developer, Document Writer
+Aliyah Lewis: Document Writer
 
 Dimetri Reese: Developer, tester
 
