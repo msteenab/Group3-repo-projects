@@ -102,6 +102,9 @@ Here is a simple Python script that opens a browser, navigates to a website and 
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
+## Basic Selenium Commands
+
+
 ### Class Diagram of Web Application's Back-End Functionalities:
 
 
