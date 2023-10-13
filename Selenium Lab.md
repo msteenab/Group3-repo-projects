@@ -15,7 +15,7 @@ _______________________________________________________________________
 
 ### FAQ (Frequently Asked Questions)
 1. My command line is displaying this error message:
-![pipError](file:///C:/Users/aliya/Documents/Classes%20For%20Summer%202023/CSC%20256/Screenshot%202023-10-13%20121701.png)
+![pipError](https://miro.medium.com/v2/resize:fit:1067/1*wyc5U_i45xQ5g-t4e33FUQ.png)
 #### This error message is most likely due to:
 - Your environment not having the path to your python folder/scripts.
 - Your pip version not being in your "scripts" folder.
