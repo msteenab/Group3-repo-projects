@@ -7,13 +7,10 @@
     <!--[if lt IE 9]>
     <![endif]-->
     <script type="text/javascript">
-    // Get a reference to the button element by its class
         const primaryButton = document.querySelectorAll(".btn btn-primary");
 
-    // Add click event listeners to all elements with the specified class
         primaryButton.forEach(button => {
             button.addEventListener("click", () => {
-                // Display an alert popup when a button is clicked
                 alert("Message Successfully Submitted");
             });
         });
