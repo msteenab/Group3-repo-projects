@@ -8,4 +8,6 @@ driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 
 # click a button
 button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")
-print(button)
+button.click()
+
+

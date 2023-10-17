@@ -121,8 +121,16 @@ Example:
 ### Click A Button
 We will begin by first clicking a button. Below is a command that can help with this:
 
-`button = driver.find_element_by_xpath("//button[@id='myButton']")
+`button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")
 button.click()`
+
+In the event you need to find the class name of the button:
+- Go to the index.html file
+- Scroll down to where you see the <button></button> tags
+- The class name should be in the "class" section in between the quotation marks
+
+Try out the button for yourself!
+<!-- Insert pop-up message image here -->
 
 <!-- Locate Elements -->
 
