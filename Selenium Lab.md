@@ -104,7 +104,14 @@ For more platform options please visit the selenium official website, and scroll
 
 Once Selenium is installed, you’re ready to create your first Selenium script!
 ### Step 4: Create Your First Selenium Script 
-Here is a simple Python script that opens a browser, navigates to a website and performs some action with expected results:	
+Here is a simple Python script that opens a browser, navigates to a website and performs some action with expected results:
+
+Note: If you wish to use a different web browser, just change the name.
+
+Example:
+- .Chrome()
+- .Edge()
+- .Firefox()
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
