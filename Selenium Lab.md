@@ -34,9 +34,15 @@ _______________________________________________________________________
 - Right-click on your python version once more and select `open file location`
 
 ##### Method 2 (Re-install)
+- Navigate to the python website: https://www.python.org/downloads/
 
+- Download and install one of the following python versions:
+![pythonDownloads](img_4.png)
 
-### PREREQUISITE
+- Once everything has installed, try to enter the following pip command in either the command line or terminal.
+`pip install selenium`
+
+### PREREQUISITES
 - Must have a basic level of knowledge of the python language
 
 ## BEFORE YOU GET STARTED
@@ -103,7 +109,21 @@ Here is a simple Python script that opens a browser, navigates to a website and 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
 ## Basic Selenium Commands
+<!-- Click a button -->
 
+<!-- Locate Elements -->
+
+<!-- Interact with Elements -->
+
+<!-- Interact with Elements -->
+
+<!-- Fill out a Form -->
+
+<!-- Submit a Form -->
+
+<!-- Handling Dropdowns -->
+
+<!-- Close and Quit the Web Driver -->
 
 ### Class Diagram of Web Application's Back-End Functionalities:
 
