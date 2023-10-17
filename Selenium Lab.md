@@ -115,8 +115,14 @@ Example:
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
-## Basic Selenium Commands
+## Step 5 (Do It Yourself) - Basic Selenium Commands
+
 <!-- Click a button -->
+### Click A Button
+We will begin by first clicking a button. Below is a command that can help with this:
+
+`button = driver.find_element_by_xpath("//button[@id='myButton']")
+button.click()`
 
 <!-- Locate Elements -->
 
