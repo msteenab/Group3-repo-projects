@@ -41,7 +41,7 @@ Selenium is a great way to automate web interactions and perform automated brows
 ### Step 1: Install Python
 If you have not already, you will need to install Python on your computer. To do so please navigate to Python official website to download the latest version: https://www.python.org/downloads/ 
 
-Note: Make sure to download the right file based on your OS, as well as adding Python to your system's PATH during installation.
+**Note:** Make sure to download the right file based on your OS, as well as adding Python to your system's PATH during installation.
 
 The current supported versions for Selenium are:
 - 2.7
@@ -64,7 +64,7 @@ Once installed, a "Successfully installed" message should be displayed.
 
 - For more information on selenium, visit their website at: https://www.selenium.dev/
 
-Note: If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
+**Note:** If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
 
 ### Step 3: Download a Web Driver
 Selenium interacts with web browsers using drivers. You will need to download the appropriate driver for the web browser you want to automate. Such as Chrome, Firefox, and Edge.  
@@ -74,32 +74,37 @@ Drivers can be found in the following URL's:
 	- GeckoDriver (for Firefox): https://github.com/mozilla/geckodriver/releases	
 	- EdgeDriver: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/	
  
-Note: Download the appropriate driver for your browser and make sure to add the driver exe to your system's PATH.  
+**Note:** Download the appropriate driver for your browser and make sure to add the driver exe to your system's PATH.  
 For more platform options please visit the selenium official website, and scroll down to browsers.
 (https://www.selenium.dev/downloads/)
 
 
 Once Selenium is installed, you’re ready to create your first Selenium script!
-### Step 4: Create Your First Selenium Script 
-Here is a simple Python script that opens a browser, navigates to a website and performs some action with expected results:
+### Step 4: Creating Your First Selenium Script 
+Here is a simple Python script that opens a browser, navigates to a website, and performs some action with expected results:
 
-Note: If you wish to use a different web browser, just change the name.
+If you wish to use a different web browser, just change the name.
 
-Example:
-- .Chrome()
-- .Edge()
-- .Firefox()
+**Examples Include:**
+.Chrome()
+.Edge()
+.Firefox()
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
 ## Step 5 (Do It Yourself) - Basic Selenium Commands
 
 <!-- Click a button -->
-### Click A Button
-We will begin by first clicking a button. Below is a command that can help with this:
+### Clicking A Button
+We will begin by first clicking a button. Below is the command that can help with this:
 
-	button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")	
+	button = driver.find_element(By.CLASS_NAME, "my-button-class")
 	button.click()
+
+- In this piece of code we are using Selenium to locate an HTML element on a web page using the class name as the locator. 
+- It looks for an element with the class name "my-button-class." (Which is the name of the button's class in the index.html document)
+- The located element is stored in the variable `button`.
+- 
 
 1. Run the script
 2. Fill out the message form
