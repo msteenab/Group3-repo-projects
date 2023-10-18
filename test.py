@@ -11,6 +11,6 @@ button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")
 button.click()
 
 # locate elements
-
+element_by_id = driver.find_element(By.ID, "element_id")
 
 

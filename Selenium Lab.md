@@ -7,43 +7,17 @@ _______________________________________________________________________
 ## LAB 01	AUTOMATION WITH SELENIUM
 
 ### OBJECTIVES
-- Provide details on commands commonly used in Selenium
-- Create a Selenium Script
 - Automate browser actions for web application testing.
 - Understand and utilize Selenium WebDriver using Python.
 - Validate web application UI elements and functionalities.
-
-### FAQ (Frequently Asked Questions)
-1. My command line is displaying this error message:
-
-![pipError1](img.png)
-#### This error message is most likely due to:
-- Your environment not having the path to your python folder/scripts.
-- Your pip version not being in your "scripts" folder.
-- Your python is outdated.
-#### How do I fix this?:
-##### Method 1 (Copy the path into your environment)
-- First type in `python` into your windows search bar (there should be a version of python already installed onto your computer)
-
-![pythonSearch](img_2.png)
-
-- Right-click the version displayed and select `open file location` or click it on the right side of the panel
-
-![fileLocation](img_3.png)
-
-- Right-click on your python version once more and select `open file location`
-
-##### Method 2 (Re-install)
-- Navigate to the python website: https://www.python.org/downloads/
-
-- Download and install one of the following python versions:
-![pythonDownloads](img_4.png)
-
-- Once everything has installed, try to enter the following pip command in either the command line or terminal.
-`pip install selenium`
+- Create a Selenium Script
+- Provide details on commands commonly used in Selenium
 
 ### PREREQUISITES
+- Must have basic knowledge of software testing
+- Must have knowledge on how to use locators
 - Must have a basic level of knowledge of the python language
+
 
 ## BEFORE YOU GET STARTED
 You will need the following in order for your tests to perform correctly 
@@ -88,6 +62,8 @@ You can install Selenium using Python's package manager, pip. Open your command 
 Once installed, a successfully installed message should be displayed.
 
 - For more information on selenium, visit their website at: https://www.selenium.dev/
+
+Note: If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this documented (located at the bottom)
 
 ### Step 3: Download a Web Driver
 Selenium interacts with web browsers using drivers. You will need to download the appropriate driver for the web browser you want to automate. Such as Chrome, Firefox, and Edge.  
@@ -136,6 +112,8 @@ In the event you need to find the class name of the button:
 - The class name should be in the "class" section in between the quotation marks
 
 <!-- Locate Elements -->
+### Locate Elements on a Web Application
+
 
 <!-- Interact with Elements -->
 
@@ -151,6 +129,35 @@ In the event you need to find the class name of the button:
 
 ### Class Diagram of Web Application's Back-End Functionalities:
 
+### FAQ (Frequently Asked Questions)
+ <a id="faq"></a>
+#### Question 1 : My command line is displaying this error message:
+
+![pipError1](img.png)
+#### This error message is most likely due to:
+- Your environment not having the correct path to your python folder/scripts.
+- Your pip version not being in your "scripts" folder.
+- Your python is outdated.
+#### How do I fix this?:
+### Method 1 (Copy the path into your environment)
+- First type in `python` into your windows search bar (there should be a version of python already installed onto your computer)
+
+![pythonSearch](img_2.png)
+
+- Right-click the version displayed and select `open file location` or click it on the right side of the panel
+
+![fileLocation](img_3.png)
+
+- Right-click on your python version once more and select `open file location`
+
+##### Method 2 (Re-install)
+- Navigate to the python website: https://www.python.org/downloads/
+
+- Download and install one of the following python versions:
+![pythonDownloads](img_4.png)
+
+- Once everything has installed, try to enter the following pip command in either the command line or terminal.
+`pip install selenium`
 
 
 
