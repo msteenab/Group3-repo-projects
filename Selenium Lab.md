@@ -60,7 +60,7 @@ You can install Selenium using Python's package manager, pip. Open your command 
 ![pipCommand](https://github.com/3osmic/Group3-repo-projects/assets/113747615/e9cf1bf1-cda0-4ff6-83b5-e7f4389c208b)
 
 
-Once installed, a successfully installed message should be displayed.
+Once installed, a "Successfully installed" message should be displayed.
 
 - For more information on selenium, visit their website at: https://www.selenium.dev/
 
@@ -130,7 +130,7 @@ In the event you need to find the class name of the button:
 
 ### Class Diagram of Web Application's Back-End Functionalities:
 
-### FAQ (Frequently Asked Questions)
+## FAQ (Frequently Asked Questions)
  <a id="faq"></a>
 #### Question 1 : My command line is displaying this error message:
 
