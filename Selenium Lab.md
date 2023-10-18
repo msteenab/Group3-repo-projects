@@ -103,8 +103,8 @@ We will begin by first clicking a button. Below is the command that can help wit
 
 - In this piece of code we are using Selenium to locate an HTML element on a web page using the class name as the locator. 
 - It looks for an element with the class name "my-button-class." (Which is the name of the button's class in the index.html document)
-- The located element is stored in the variable `button`.
-- 
+- The located element is then stored in the variable `button`.
+- After the element is located and stored in the `button` variable, `button.click()` instructs Selenium to simulate a click action on the button element.
 
 1. Run the script
 2. Fill out the message form
