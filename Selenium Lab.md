@@ -126,15 +126,14 @@ button.click()`
 
 1. Run the script
 2. Fill out the message form
-3. Click the button for a surprise
+3. Click the button for a surprise!
+
+![popupMessage](img_5.png)
 
 In the event you need to find the class name of the button:
 - Go to the index.html file
 - Scroll down to where you see the <button></button> tags
 - The class name should be in the "class" section in between the quotation marks
-
-Try out the button for yourself!
-<!-- Insert pop-up message image here -->
 
 <!-- Locate Elements -->
 
