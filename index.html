@@ -7,14 +7,11 @@
     <!--[if lt IE 9]>
     <![endif]-->
     <script type="text/javascript">
-        // Get a reference to the button element
-        const popupButton = document.getElementById("popupButton");
+        function clickMe() {
+            // alert message when clicked
+            alert("Message Successfully Sent!")
+        }
 
-        // Add a click event listener to the button
-        popupButton.addEventListener("click", () => {
-            // Display an alert popup when the button is clicked
-            alert("Hello! This is a popup message.");
-        });
     </script>
 </head>
 
@@ -101,7 +98,7 @@
                             <input type="checkbox" name="subscribe" checked="checked">Sign me up for email updates
                         </label>
                         <br>
-                        <button id="popupButton" type="submit" class="btn btn-primary">Submit Message</button>
+                        <button onclick="clickMe()" type="submit" class="btn btn-primary">Submit Message</button>
 
                     </fieldset>
                 </form>
