@@ -130,10 +130,10 @@ In the event you need to find the class name of the button:
 
 ### Class Diagram of Web Application's Back-End Functionalities:
 
-## FAQ (Frequently Asked Questions)
-
-#### Question 1 : My command line is displaying this error message:
+### FAQ (Frequently Asked Questions)
  <a id="faq"></a>
+#### Question 1 : My command line is displaying this error message:
+
 ![pipError1](img.png)
 #### This error message is most likely due to:
 - Your environment not having the correct path to your python folder/scripts.
