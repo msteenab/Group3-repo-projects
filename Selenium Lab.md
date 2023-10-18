@@ -124,6 +124,10 @@ We will begin by first clicking a button. Below is a command that can help with 
 `button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")
 button.click()`
 
+1. Run the script
+2. Fill out the message form
+3. Click the button for a surprise
+
 In the event you need to find the class name of the button:
 - Go to the index.html file
 - Scroll down to where you see the <button></button> tags
