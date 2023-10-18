@@ -80,7 +80,7 @@ If you already have pip installed on our system, you can upgrade it by using the
 
 ### Step 2: Install Selenium
 You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:    
-`{ pip install selenium }`
+`pip install selenium`
 
 ![pipCommand](https://github.com/3osmic/Group3-repo-projects/assets/113747615/e9cf1bf1-cda0-4ff6-83b5-e7f4389c208b)
 
