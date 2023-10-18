@@ -39,7 +39,7 @@ You will need the following in order for your tests to perform correctly
 Selenium is a great way to automate web interactions and perform automated browser testing. You can use selenium with multiple languages, but in this lab we will only focus on python. The latest version of selenium is selenium 4. The information below is a step-by-step guide on how to help you get started.
 
 ### Step 1: Install Python
-If you have not, you will need to install Python on your computer. To do so please navigate to Python official website to download the latest version: https://www.python.org/downloads/ 
+If you have not already, you will need to install Python on your computer. To do so please navigate to Python official website to download the latest version: https://www.python.org/downloads/ 
 
 Note: Make sure to download the right file based on your OS, as well as adding Python to your system's PATH during installation.
 
@@ -48,9 +48,9 @@ The current supported versions for Selenium are:
 - 3.5+
 
 #### (IF YOU AlREADY HAVE PIP ON YOUR SYSTEM):
-If you already have pip installed on our system, you can upgrade it by using the following command in either the command line or terminal:
+If you already have pip installed on your system, you can upgrade it by using the following command in either the command line or terminal:
 
-![pipUpgrade](img_1.png)
+`pip install -U selenium`
 
 ### Step 2: Install Selenium
 You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:    
