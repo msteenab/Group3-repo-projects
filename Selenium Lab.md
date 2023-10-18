@@ -64,7 +64,7 @@ Once installed, a "Successfully installed" message should be displayed.
 
 - For more information on selenium, visit their website at: https://www.selenium.dev/
 
-Note: If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this documented (located at the bottom)
+Note: If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
 
 ### Step 3: Download a Web Driver
 Selenium interacts with web browsers using drivers. You will need to download the appropriate driver for the web browser you want to automate. Such as Chrome, Firefox, and Edge.  
