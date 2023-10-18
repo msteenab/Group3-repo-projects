@@ -121,8 +121,8 @@ Example:
 ### Click A Button
 We will begin by first clicking a button. Below is a command that can help with this:
 
-`button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")`
-`button.click()`
+	button = driver.button = driver.find_element(By.CLASS_NAME, "my-button-class")	
+	button.click()
 
 1. Run the script
 2. Fill out the message form
