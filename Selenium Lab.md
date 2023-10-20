@@ -123,20 +123,16 @@ In the event you need to find the class name of the button:
 <!-- Testing Comment Text Area -->
 
 <!-- Clicking a Button -->
-from selenium import webdriver
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-
-# Locate an element (e.g., a button) by its ID
+### Clicking a Button
+```python
+from selenium import webdriver # Initialize the web driver (e.g., Chrome)
+driver = webdriver.Chrome() # Navigate to a webpage
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Locate an element (e.g., a button) by its ID
 
 # Perform an interaction (e.g., click the button)
-
 # Close the browser
 driver.quit()
-
+```
 <!-- Close and Quit the Web Driver -->
 
 ### Class Diagram of Web Application's Back-End Functionalities:
