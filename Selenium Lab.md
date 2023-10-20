@@ -125,13 +125,19 @@ In the event you need to find the class name of the button:
 <!-- Clicking a Button -->
 ### Clicking a Button
 ```python
-from selenium import webdriver # Initialize the web driver (e.g., Chrome)
+from selenium import webdriver
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# Keeps the webpage from automatically closing
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  
+driver = webdriver.Edge(options=options)
+# Initialize the web driver (e.g., Chrome)
 driver = webdriver.Chrome() # Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Locate an element (e.g., a button) by its ID
-
+driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+# Locate an element (e.g., a button) by its ID
 # Perform an interaction (e.g., click the button)
-# Close the browser
-driver.quit()
 ```
 <!-- Close and Quit the Web Driver -->
 
