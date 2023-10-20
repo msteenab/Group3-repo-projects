@@ -119,6 +119,24 @@ In the event you need to find the class name of the button:
 
 <!-- Locate Elements -->
 ### Locate Elements on a Web Application
+```python
+from selenium import webdriver
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# Keeps the webpage from automatically closing
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  
+driver = webdriver.Edge(options=options)
+# Initialize the web driver (e.g., Chrome)
+driver = webdriver.Chrome() # Navigate to a webpage
+driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+# Fix the code below so that you can click a button using the different find_element(By....)
+element = driver.find_element(By.ID, "element-id")
+element = driver.find_element(By.NAME, "element-name")
+element = driver.find_element(By.CLASS_NAME, "element-class")
+
+```
 
 <!-- Testing Comment Text Area -->
 
