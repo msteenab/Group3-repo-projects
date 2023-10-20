@@ -120,16 +120,9 @@ In the event you need to find the class name of the button:
 <!-- Locate Elements -->
 ### Locate Elements on a Web Application
 
+<!-- Testing Comment Text Area -->
 
-<!-- Interact with Elements -->
-
-<!-- Interact with Elements -->
-
-<!-- Fill out a Form -->
-
-<!-- Submit a Form -->
-
-<!-- Handling Dropdowns -->
+<!-- Clicking a Button -->
 
 <!-- Close and Quit the Web Driver -->
 
