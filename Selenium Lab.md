@@ -93,7 +93,7 @@ If you wish to use a different web browser, just change the name.
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
 ## Step 5 (Do It Yourself) - Basic Selenium Commands
-
+Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 <!-- Click a button -->
 ### Clicking A Button
 We will begin by first clicking a button. Below is the command that can help with this:
@@ -120,16 +120,9 @@ In the event you need to find the class name of the button:
 <!-- Locate Elements -->
 ### Locate Elements on a Web Application
 
+<!-- Testing Comment Text Area -->
 
-<!-- Interact with Elements -->
-
-<!-- Interact with Elements -->
-
-<!-- Fill out a Form -->
-
-<!-- Submit a Form -->
-
-<!-- Handling Dropdowns -->
+<!-- Clicking a Button -->
 
 <!-- Close and Quit the Web Driver -->
 
