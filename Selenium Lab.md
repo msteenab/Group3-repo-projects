@@ -136,11 +136,46 @@ driver = webdriver.Edge(options=options)
 # Initialize the web driver (e.g., Chrome)
 driver = webdriver.Chrome() # Navigate to a webpage
 driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+# Code to input goes below 
 # Locate an element (e.g., a button) by its ID
 # Perform an interaction (e.g., click the button)
 ```
 <!-- Close and Quit the Web Driver -->
-
+### Close the Web Driver Tab
+```python
+### Code for closing out the tab that you opened through Selenium
+from selenium import webdriver
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# Keeps the webpage from automatically closing
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  
+driver = webdriver.Edge(options=options)
+# Initialize the web driver (e.g., Chrome)
+driver = webdriver.Chrome() # Navigate to a webpage
+driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+time.sleep(5) # Pauses before doing next peice of code
+# Before the pause is over open up an extra tab
+# Code to input goes here
+```
+### Close the Web Driver Browser
+```python
+### Code for closing out the browser that you opened through Selenium
+from selenium import webdriver
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# Keeps the webpage from automatically closing
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  
+driver = webdriver.Edge(options=options)
+# Initialize the web driver (e.g., Chrome)
+driver = webdriver.Chrome() # Navigate to a webpage
+driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+time.sleep(5) # Pauses before doing next peice of code
+# Code to input goes here
+```
 ### Class Diagram of Web Application's Back-End Functionalities:
 
 ## FAQ (Frequently Asked Questions)
