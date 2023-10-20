@@ -15,7 +15,7 @@ driver.find_element(By.ID, "comments").send_keys("Love this Place!")
 time.sleep(5)
 
 # click a button
-button = driver.find_element(By., "btn.btn-primary")
+button = driver.find_element(By.CLASS_NAME, "btn.btn-primary")
 button.click()
 time.sleep(5)
 
