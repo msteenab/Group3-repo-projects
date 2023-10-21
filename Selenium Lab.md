@@ -106,6 +106,28 @@ We will begin by first clicking a button. Below is the command that can help wit
 - The located element is then stored in the variable `button`.
 - After the element is located and stored in the `button` variable, `button.click()` instructs Selenium to simulate a click action on the button element.
 
+Here is the full code provided in order for you to run it:
+
+```python
+from selenium import webdriver
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+# Keeps the webpage from automatically closing
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  
+driver = webdriver.Edge(options=options)
+# Initialize the web driver (e.g., Chrome)
+driver = webdriver.Chrome()
+# Navigate to a webpage
+driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+# Code to input goes below 
+# Locate an element (e.g., a button) by its ID
+button = driver.find_element(By.CLASS_NAME, "my-button-class")
+# Perform an interaction (e.g., click the button)
+button.click()
+```
+
 1. Run the script
 2. Fill out the message form
 3. Click the "Submit Message" button for a surprise!
@@ -158,25 +180,6 @@ driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 
 ```
 
-<!-- Clicking a Button -->
-### Clicking a Button
-```python
-from selenium import webdriver
-import time
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
-options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
-driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-# Code to input goes below 
-# Locate an element (e.g., a button) by its ID
-# Perform an interaction (e.g., click the button)
-```
 <!-- Close and Quit the Web Driver -->
 ### Close the Web Driver Tab
 ```python
