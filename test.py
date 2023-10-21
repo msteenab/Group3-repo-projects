@@ -1,6 +1,6 @@
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+import time
 
 
 options = webdriver.EdgeOptions()
@@ -12,18 +12,18 @@ driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 driver.maximize_window()
 
 # click a button
-# button = driver.find_element(By.CLASS_NAME, "my-button-class")
-# button.click()
+driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
+time.sleep(2)
 
 # typing in comment box
-driver.find_element(By.ID,"comments").send_keys("Love this Place!")
+#driver.find_element(By.ID,"comments").send_keys("Love this Place!")
 
 # returning title of page
-print("Page title is: ")
-print(driver.title)
+#print("Page title is: ")
+#print(driver.title)
 
 # time before window closes
-time.sleep(13)
+# time.sleep(13)
 
 # Close Edge browser
 driver.quit()

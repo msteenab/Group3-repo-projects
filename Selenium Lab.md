@@ -93,51 +93,51 @@ If you wish to use a different web browser, just change the name.
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
 ## Step 5 (Do It Yourself) - Basic Selenium Commands
+ <a id="website"></a>
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 <!-- Click a button -->
 ### Clicking A Button
 We will begin by first clicking a button. Below is the command that can help with this:
 
-	button = driver.find_element(By.CLASS_NAME, "my-button-class")
-	button.click()
+	driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
 
-- In this piece of code we are using Selenium to locate an HTML element on a web page using the class name as the locator. 
-- It looks for an element with the class name "my-button-class." (Which is the name of the button's class in the index.html document)
-- The located element is then stored in the variable `button`.
-- After the element is located and stored in the `button` variable, `button.click()` instructs Selenium to simulate a click action on the button element.
+- This line of code uses Selenium to locate an HTML element on a web page using an XPath expression as the locator. 
+- It finds the HTML element specified by the provided XPath.
+- `.click()`: After the element is located using the XPath expression, the `.click()` method is called on that element.
+- This method instructs Selenium to simulate a click action on the located HTML element.
 
 Here is the full code provided in order for you to run it:
 
 ```python
 from selenium import webdriver
-import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
+import time
+
 options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
+options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
 driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-# Code to input goes below 
-# Locate an element (e.g., a button) by its ID
-button = driver.find_element(By.CLASS_NAME, "my-button-class")
-# Perform an interaction (e.g., click the button)
-button.click()
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
+
+# Maximizing window
+driver.maximize_window()
+
+# Click a button
+driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
+time.sleep(2)
+
+# Close Edge browser
+driver.quit()
 ```
 
 1. Run the script
-2. Fill out the message form
-3. Click the "Submit Message" button for a surprise!
+2. See the surprise message that pops up!
 
 ![popupMessage](img_5.png)
 
-In the event you need to find the class name of the button:
-- Go to the index.html file
-- Scroll down to where you see the <button></button> tags
-- The class name should be in the "class" section in between the quotation marks
+In the event you need to find the XPATH of the button:
+- Go to our website [(listed above)](#website)
+- Right-click on the website button and choose inspection
+- Right-click again on the <button></button> section and go to: Copy -> Copy Full XPATH
 
 <!-- Locate Elements -->
 ### Locate Elements on a Web Application
