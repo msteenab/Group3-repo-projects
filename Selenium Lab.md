@@ -271,16 +271,23 @@ options.add_experimental_option("detach", True)  # Keeps the webpage from automa
 driver = webdriver.Edge(options=options)
 driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
 
-# close driver tab
+# Get the url of the new tab
 driver.execute_script("window.open('https://cbarnc.github.io/Group3-repo-projects/about.html', '_blank');")
+
+# Switch to a new tab
 driver.switch_to.window(driver.window_handles[1])
+
+# Time before tab closes
 time.sleep(5)
+
+# Close tab
 driver.close()
 
+# Switch back to original url
 driver.switch_to.window(driver.window_handles[0])
 
 
-# time before window closes
+# Time before browser closes
 time.sleep(2)
 
 
