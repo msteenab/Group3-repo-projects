@@ -96,7 +96,7 @@ If you wish to use a different web browser, just change the name.
  <a id="website"></a>
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 <!-- Click a button -->
-### Clicking A Button
+### COMMAND 1 - Clicking A Button
 We will begin by first clicking a button. Below is the command that can help with this:
 
 	driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
@@ -140,7 +140,7 @@ In the event you need to find the XPATH of the button:
 - Right-click again on the <button></button> section and go to: Copy -> Copy Full XPATH
 
 <!-- Locate Elements -->
-### Locate Elements on a Web Application
+### COMMAND 2 - Locate Elements on a Web Application
 We will be finding the following elements on our website:
 - h2 (heading 2)
 - h3 (heading 3)
