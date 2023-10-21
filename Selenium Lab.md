@@ -160,6 +160,8 @@ Below are the commands that can help with this:
 - These commands use Selenium to locate an HTML element based on its tag name. 
 - After the elements are located and stored in the variables, they are then printed using the `print()` statement
 
+Here is the full code provided in order for you to run it:
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
