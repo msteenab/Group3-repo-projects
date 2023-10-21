@@ -17,7 +17,7 @@ _______________________________________________________________________
 - Must have basic knowledge of software testing
 - Must have knowledge on how to use locators
 - Must have a basic level of knowledge of the python programming language
-
+- Must have a basic level of knowledge of html
 
 ## BEFORE YOU GET STARTED
 You will need the following in order for your tests to perform correctly 
@@ -141,25 +141,60 @@ In the event you need to find the XPATH of the button:
 
 <!-- Locate Elements -->
 ### Locate Elements on a Web Application
+We will be finding the following elements on our website:
+- h2 (heading 2)
+- h3 (heading 3)
+- p (paragraph)
+
+Below are the commands that can help with this:
+
+    h2 = driver.find_element(By.TAG_NAME, "h2")
+    print(h2.text)
+
+    h3 = driver.find_element(By.TAG_NAME, "h3")
+    print(h3.text)
+
+    p = driver.find_element(By.TAG_NAME, "p")
+    print(p.text)
+
+- These commands use Selenium to locate an HTML element based on its tag name. 
+- After the elements are located and stored in the variables, they are then printed using the `print()` statement
+
 ```python
 from selenium import webdriver
-import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
+
 options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
+options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
 driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome() # Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-# Fix the code below so that you can set yourself up to interact with different things on a web page
-# using the different find_element(By....)
-element = driver.find_element(By.ID, "element-id")
-element = driver.find_element(By.NAME, "element-name")
-element = driver.find_element(By.CLASS_NAME, "element-class")
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
+
+# Maximizing window
+driver.maximize_window()
+
+# find element by tag name
+h2 = driver.find_element(By.TAG_NAME, "h2")
+print(h2.text)
+
+h3 = driver.find_element(By.TAG_NAME, "h3")
+print(h3.text)
+
+p = driver.find_element(By.TAG_NAME, "p")
+print(p.text)
+
+# Close Edge browser
+driver.quit()
 
 ```
+
+1. Run the script
+2. Look at the compiler to see the headings and paragraph text
+
+![compilerHeadingParagraph](img_6.png)
+
+In the event you need to find the tag name:
+- Go to our website [(listed above)](#website)
+- Right-click on the heading or paragraph you want to find the tag for and choose inspection
 
 <!-- Testing Comment Text Area -->
 ### Testing Comment Text Area
