@@ -153,7 +153,7 @@ driver = webdriver.Edge(options=options)
 # Initialize the web driver (e.g., Chrome)
 driver = webdriver.Chrome() # Navigate to a webpage
 driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-# Fix the code below so that you can set yourself up to intereact with different things on a web page
+# Fix the code below so that you can set yourself up to interact with different things on a web page
 # using the different find_element(By....)
 element = driver.find_element(By.ID, "element-id")
 element = driver.find_element(By.NAME, "element-name")
