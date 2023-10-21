@@ -111,7 +111,6 @@ Here is the full code provided in order for you to run it:
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 
 options = webdriver.EdgeOptions()
 options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
@@ -123,10 +122,7 @@ driver.maximize_window()
 
 # Click a button
 driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
-time.sleep(2)
 
-# Close Edge browser
-driver.quit()
 ```
 
 1. Run the script
@@ -174,7 +170,7 @@ driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
 # Maximizing window
 driver.maximize_window()
 
-# find element by tag name
+# Find element by tag name
 h2 = driver.find_element(By.TAG_NAME, "h2")
 print(h2.text)
 
@@ -183,9 +179,6 @@ print(h3.text)
 
 p = driver.find_element(By.TAG_NAME, "p")
 print(p.text)
-
-# Close Edge browser
-driver.quit()
 
 ```
 
@@ -199,62 +192,125 @@ In the event you need to find the tag name:
 - Right-click on the heading or paragraph you want to find the tag for and choose inspection
 
 <!-- Testing Comment Text Area -->
-### Testing Comment Text Area
+### COMMAND 3 - Testing Comment Text Area
+Below is the command that can help with this:
+
+    comments = driver.find_element(By.ID, "comments")
+    comments.send_keys("This is a comment I made!")
+
+- This first line uses Selenium to locate an HTML element by its ID attribute. 
+- After the element with the ID "comments" is located and stored in the `comments` variable, this line of code simulates keyboard input by sending the text "This is a comment I made!" to the HTML input element with that ID.
+
+Here is the full code provided in order for you to run it:
+
 ```python
 from selenium import webdriver
-import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
+
 options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
+options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
 driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-# Input code below so that you can see  "I love this!" get typed into the comments box when this file is launched
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
+
+# Maximizing window
+driver.maximize_window()
+
+# Testing comments
+comments = driver.find_element(By.ID, "comments")
+comments.send_keys("This is a comment I made!")
 
 ```
+
+1. Run the script
+2. Look at the comment text box area to see your message!
+
+![commentMessage](img_7.png)
+
+In the event you need to find the id of the comment section:
+- Go to our website [(listed above)](#website)
+- Right-click on the comment text area and choose inspection
+- You should be able to see the id in the <textarea> tags
 
 <!-- Close and Quit the Web Driver -->
-### Close the Web Driver Tab
+### COMMAND 4 - Close the Web Driver Tab
+Below are the commands that can help with this:
+    
+    driver.execute_script("window.open('https://cbarnc.github.io/Group3-repo-projects/about.html', '_blank');")
+    driver.switch_to.window(driver.window_handles[1])
+    time.sleep(5)
+    driver.close()
+
+    driver.switch_to.window(driver.window_handles[0])
+
+
+    # time before window closes
+    time.sleep(2)
+
+
+    # Close Edge browser
+    driver.quit()
+
 ```python
-### Code for closing out the tab that you opened through Selenium
-from selenium import webdriver
-import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
-options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
-driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-time.sleep(5) # Pauses before doing next peice of code
-# Before the pause is over open up an extra tab
-# Code to input goes here
-```
-### Close the Web Driver Browser
-```python
-### Code for closing out the browser that you opened through Selenium
-from selenium import webdriver
 import time
+
+options = webdriver.EdgeOptions()
+options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
+driver = webdriver.Edge(options=options)
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
+
+# close driver tab
+driver.execute_script("window.open('https://cbarnc.github.io/Group3-repo-projects/about.html', '_blank');")
+driver.switch_to.window(driver.window_handles[1])
+time.sleep(5)
+driver.close()
+
+driver.switch_to.window(driver.window_handles[0])
+
+
+# time before window closes
+time.sleep(2)
+
+
+# Close Edge browser
+driver.quit()
+
+
+```
+### COMMAND 5 - Close the Web Driver Browser
+This is an easier command and can be done below:
+    
+    driver.quit()
+
+- This command is used in Selenium to close the web browser and terminate the WebDriver session.
+
+Here is the full code provided in order for you to run it:
+
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-# Keeps the webpage from automatically closing
+import time
+
 options = webdriver.EdgeOptions()
-options.add_experimental_option("detach", True)  
+options.add_experimental_option("detach", True)  # Keeps the webpage from automatically closing
 driver = webdriver.Edge(options=options)
-# Initialize the web driver (e.g., Chrome)
-driver = webdriver.Chrome()
-# Navigate to a webpage
-driver.get("https://cbarnc.github.io/Group3-repo-projects/")
-time.sleep(5) # Pauses before doing next peice of code
-# Code to input goes here
+driver.get("https://cbarnc.github.io/Group3-repo-projects/") # Gets the website
+
+# Maximizing window
+driver.maximize_window()
+
+# Time before window closes
+time.sleep(2)
+
+# Close Edge browser
+driver.quit()
+
 ```
+
+1. Run the script
+2. Wait 2 seconds for your browser to close
+
 ### Class Diagram of Web Application's Back-End Functionalities:
 
 ## FAQ (Frequently Asked Questions)

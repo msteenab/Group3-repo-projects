@@ -16,26 +16,39 @@ driver.maximize_window()
 
 
 # find element by tag name
-h2 = driver.find_element(By.TAG_NAME, "h2")
-print(h2.text)
+# h2 = driver.find_element(By.TAG_NAME, "h2")
+# print(h2.text)
 
-h3 = driver.find_element(By.TAG_NAME, "h3")
-print(h3.text)
+# h3 = driver.find_element(By.TAG_NAME, "h3")
+# print(h3.text)
 
-p = driver.find_element(By.TAG_NAME, "p")
-print(p.text)
+# p = driver.find_element(By.TAG_NAME, "p")
+# print(p.text)
 
-# time.sleep(2)
+
 
 # typing in comment box
-#driver.find_element(By.ID,"comments").send_keys("Love this Place!")
+# comments = driver.find_element(By.ID, "comments")
+# comments.send_keys("This is a comment I made!")
+
+# time.sleep(2)
 
 # returning title of page
 #print("Page title is: ")
 #print(driver.title)
 
+# close driver tab
+driver.execute_script("window.open('https://cbarnc.github.io/Group3-repo-projects/about.html', '_blank');")
+driver.switch_to.window(driver.window_handles[1])
+time.sleep(5)
+driver.close()
+
+driver.switch_to.window(driver.window_handles[0])
+
+
 # time before window closes
-# time.sleep(13)
+time.sleep(2)
+
 
 # Close Edge browser
 driver.quit()
