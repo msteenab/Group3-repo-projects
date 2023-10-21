@@ -250,6 +250,17 @@ Below are the commands that can help with this:
     # Close Edge browser
     driver.quit()
 
+- This first command uses `execute_script` in Selenium to open a new browser tab or window with the URL 'https://cbarnc.github.io/Group3-repo-projects/about.html' using the JavaScript `window.open` method.
+- The second argument '_blank' specifies that the URL should open in a new tab or window.
+- The `driver.window_handles[1]` accesses the handle of the second window (tab).
+- The `time.sleep(5)` delays the browser from closing for 5 seconds
+- After the 5 seconds the `driver.close()` command closes the new opened tab
+- The `driver.switch_to.window` command switches the focus of the WebDriver back to the first tab. It uses `driver.window_handles[0]` to access the handle of the first tab.
+- The `time.sleep(2)` delays the browser from closing for 2 seconds
+- After the 2 seconds the `driver.quit()` command closes the browser
+
+Here is the full code provided in order for you to run it:
+
 ```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -278,6 +289,12 @@ driver.quit()
 
 
 ```
+
+1. Run the script
+2. See the browser open into a new tab and close afterwards!
+
+![newTab](img_8.png)
+
 ### COMMAND 5 - Close the Web Driver Browser
 This is an easier command and can be done below:
     
