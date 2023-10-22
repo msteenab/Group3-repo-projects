@@ -334,8 +334,6 @@ driver.quit()
 1. Run the script
 2. Wait 2 seconds for your browser to close
 
-### Class Diagram of Web Application's Back-End Functionalities:
-
 ## FAQ (Frequently Asked Questions)
  <a id="faq"></a>
 #### Question 1 : My command line is displaying this error message:
