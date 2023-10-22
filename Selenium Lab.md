@@ -44,7 +44,6 @@ If you have not already, you will need to install Python on your computer. To do
 **Note:** Make sure to download the right file based on your OS, as well as adding Python to your system's PATH during installation.
 
 The current supported versions for Selenium are:
-- 2.7
 - 3.5+
 
 #### (IF YOU AlREADY HAVE PIP ON YOUR SYSTEM):
@@ -92,7 +91,7 @@ If you wish to use a different web browser, just change the name.
 
 ![FirstScript](https://github.com/3osmic/Group3-repo-projects/assets/113747615/083e734e-18ca-4787-8228-0384d1085194)
 
-## Step 5 (Do It Yourself) - Basic Selenium Commands
+## Step 5: (Do It Yourself) - Basic Selenium Commands
  <a id="website"></a>
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 <!-- Click a button -->
@@ -102,7 +101,7 @@ We will begin by first clicking a button. Below is the command that can help wit
 	driver.find_element(By.XPATH, "/html/body/div/aside/section[2]/form/fieldset/button").click()
 
 - This line of code uses Selenium to locate an HTML element on a web page using an XPath expression as the locator. 
-- It finds the HTML element specified by the provided XPath.
+- It locates the HTML element specified by the provided XPath.
 - `.click()`: After the element is located using the XPath expression, the `.click()` method is called on that element.
 - This method instructs Selenium to simulate a click action on the located HTML element.
 
@@ -347,7 +346,7 @@ driver.quit()
 - Your pip version not being in your "scripts" folder.
 - Your python is outdated.
 #### How do I fix this?:
-### Method 1 (Copy the path into your environment)
+#### Method 1 (Copy the path into your environment)
 - First type in `python` into your windows search bar (there should be a version of python already installed onto your computer)
 
 ![pythonSearch](img_2.png)
@@ -358,7 +357,7 @@ driver.quit()
 
 - Right-click on your python version once more and select `open file location`
 
-##### Method 2 (Re-install)
+#### Method 2 (Re-install)
 - Navigate to the python website: https://www.python.org/downloads/
 
 - Download and install one of the following python versions:
