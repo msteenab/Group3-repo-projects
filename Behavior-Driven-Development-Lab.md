@@ -27,3 +27,16 @@ Gherkin is a plain-text, domain-specific language used to describe the behavior 
 
 #### WHAT ARE FEATURE FILES?
 Feature files are written in plain text and contain scenarios that describe the expected behavior of a particular feature of your application. They typically use a structured format like Gherkin, which is a language for specifying behavior using keywords like "Given," "When," and "Then."
+
+## (Do It Yourself)
+Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
+
+### FEATURE FILE 1 ()
+
+### FEATURE FILE 2 ()
+
+### FEATURE FILE 3 ()
+
+### FEATURE FILE 4 ()
+
+### FEATURE FILE 5 ()
