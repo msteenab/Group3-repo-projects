@@ -28,7 +28,7 @@ For more information on GitHub and Selenium: https://github.com/CbarNC/Group3-re
 
 ### Step 1: Install a code editor
 #### Visual Studio Code
-- Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft
+Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft
 
 1. Visit the official Visual Studio Code website: https://code.visualstudio.com/.
 
@@ -39,7 +39,7 @@ For more information on GitHub and Selenium: https://github.com/CbarNC/Group3-re
 4. Once the installation is complete, you can launch Visual Studio Code by finding it in your Start menu or using the desktop shortcut.
 
 #### Pycharm
-- PyCharm is a popular integrated development environment (IDE) specifically designed for Python development
+PyCharm is a popular integrated development environment (IDE) specifically designed for Python development
 
 1. Visit the JetBrains PyCharm Community page: https://www.jetbrains.com/pycharm/download/
 
