@@ -21,12 +21,6 @@ Examples of code editors:
 - VS Code
 - Pycharm (Recommended)
 
-### HOW TO CREATE A GITHUB ACCOUNT
-- Navigate to this page on how to create a GitHub account: https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account
-
-### HOW TO CLONE A GITHUB REPOSITORY
-- Navigate to this page on how to clone a GitHub repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
-
 ### OVERVIEW
 Behave is a Python library for behavior-driven development (BDD). BDD is a software development methodology that extends test-driven development (TDD) by encouraging collaboration between developers, testers, and non-technical stakeholders like business analysts and product owners. BDD focuses on the behavior of a software system from the user's perspective and emphasizes the use of natural language to describe and document the system's functionality.
 
