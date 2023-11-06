@@ -31,12 +31,57 @@ Feature files are written in plain text and contain scenarios that describe the 
 ## (Do It Yourself)
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 
-### FEATURE FILE 1 ()
+### FEATURE FILE 1 (User Registration)
 
-### FEATURE FILE 2 ()
+Feature: User Registration
+  Scenario: User can register for an account
+    Given the user is on the registration page
+    When the user fills in their information
+    And clicks the "Register" button
+    Then the user should be logged in
 
-### FEATURE FILE 3 ()
+### FEATURE FILE 2 (Login Functionality)
 
-### FEATURE FILE 4 ()
+Feature: Login Functionality
+  Scenario: User can log in with valid credentials
+    Given the user is on the login page
+    When they enter valid username and password
+    And click the "Login" button
+    Then they should be redirected to the dashboard
 
-### FEATURE FILE 5 ()
+### FEATURE FILE 3 (Password Reset)
+
+Feature: Password Reset
+  Scenario: User can request a password reset
+    Given the user is on the login page
+    When they click the "Forgot Password" link
+    And provide their email address
+    And submit the request
+    Then they should receive a password reset email
+
+### FEATURE FILE 4 (Menu Display)
+
+Feature: Menu Display
+  Scenario: User can view the restaurant's menu
+    Given the user is on the restaurant's homepage
+    When they click on the "Menu" section
+    Then they should see a list of dishes and their prices
+
+### FEATURE FILE 5 (Restaurant Reviews)
+
+Feature: Restaurant Reviews
+  Scenario: User can read and write restaurant reviews
+    Given the user is on the restaurant's page
+    When they scroll down to the "Reviews" section
+    And they read existing reviews
+    And they write and submit their own review
+    Then their review should be visible among the others
+
+
+### FEATURE FILE 6 (Contact Information)
+
+Feature: Contact Information
+  Scenario: User can find restaurant contact details
+    Given the user is on the restaurant's homepage
+    When they navigate to the "Contact" page
+    Then they should find the restaurant's address, phone number, and email
