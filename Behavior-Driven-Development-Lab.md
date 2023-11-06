@@ -26,6 +26,12 @@ Behave is a Python library for behavior-driven development (BDD). BDD is a softw
 
 For more information on GitHub: https://github.com/CbarNC/Group3-repo-projects/blob/Selenium/Selenium%20Lab.md
 
+#### WHAT IS GHERKIN?
+Gherkin is a plain-text, domain-specific language used to describe the behavior of software systems in a human-readable format. It is commonly associated with behavior-driven development (BDD) and is often used to write feature files that define the expected behavior of a software application from the user's perspective. Gherkin is designed to be easily understood by non-technical stakeholders, such as product owners, business analysts, and domain experts, as well as developers and testers.
+
+#### WHAT ARE FEATURE FILES?
+Feature files are written in plain text and contain scenarios that describe the expected behavior of a particular feature of your application. They typically use a structured format like Gherkin, which is a language for specifying behavior using keywords like "Given," "When," and "Then."
+
 ### Step 1: Install a code editor
 #### Visual Studio Code
 Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft
@@ -64,13 +70,7 @@ Once installed, a "Successfully installed" message should be displayed.
 
 **Note:** If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
 
-#### WHAT IS GHERKIN?
-Gherkin is a plain-text, domain-specific language used to describe the behavior of software systems in a human-readable format. It is commonly associated with behavior-driven development (BDD) and is often used to write feature files that define the expected behavior of a software application from the user's perspective. Gherkin is designed to be easily understood by non-technical stakeholders, such as product owners, business analysts, and domain experts, as well as developers and testers.
-
-#### WHAT ARE FEATURE FILES?
-Feature files are written in plain text and contain scenarios that describe the expected behavior of a particular feature of your application. They typically use a structured format like Gherkin, which is a language for specifying behavior using keywords like "Given," "When," and "Then."
-
-## (Do It Yourself)
+## Step 3 (Do It Yourself)
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 
 ### Scenario 1 (User Registration)
