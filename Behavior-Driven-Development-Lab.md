@@ -3,7 +3,7 @@
 - Must have a basic level of knowledge of the python programming language
 - Must have a basic level of knowledge of html
 
-### BEFORE YOU GET STARTED
+## BEFORE YOU GET STARTED
 You will need the following in order for your tests to perform correctly
 
 - Install a web browser to run the web application
@@ -11,6 +11,8 @@ You will need the following in order for your tests to perform correctly
         - Firefox (Recommended)
         - Chrome
         - Microsoft Edge
+- Create a GitHub account
+  - Clone the GitHub repository
 - Install a code editor
 - Download Behave
 - Install Gherkin
@@ -19,8 +21,16 @@ Examples of code editors:
 - VS Code
 - Pycharm (Recommended)
 
+### HOW TO CREATE A GITHUB ACCOUNT
+- Navigate to this page on how to create a GitHub account: https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account
+
+### HOW TO CLONE A GITHUB REPOSITORY
+- Navigate to this page on how to clone a GitHub repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
 ### OVERVIEW
 Behave is a Python library for behavior-driven development (BDD). BDD is a software development methodology that extends test-driven development (TDD) by encouraging collaboration between developers, testers, and non-technical stakeholders like business analysts and product owners. BDD focuses on the behavior of a software system from the user's perspective and emphasizes the use of natural language to describe and document the system's functionality.
+
+For more information on GitHub and Selenium: https://github.com/CbarNC/Group3-repo-projects/blob/Selenium/Selenium%20Lab.md
 
 #### WHAT IS GHERKIN?
 Gherkin is a plain-text, domain-specific language used to describe the behavior of software systems in a human-readable format. It is commonly associated with behavior-driven development (BDD) and is often used to write feature files that define the expected behavior of a software application from the user's perspective. Gherkin is designed to be easily understood by non-technical stakeholders, such as product owners, business analysts, and domain experts, as well as developers and testers.
