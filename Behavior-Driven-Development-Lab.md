@@ -24,7 +24,7 @@ Examples of code editors:
 ### OVERVIEW
 Behave is a Python library for behavior-driven development (BDD). BDD is a software development methodology that extends test-driven development (TDD) by encouraging collaboration between developers, testers, and non-technical stakeholders like business analysts and product owners. BDD focuses on the behavior of a software system from the user's perspective and emphasizes the use of natural language to describe and document the system's functionality.
 
-For more information on GitHub and Selenium: https://github.com/CbarNC/Group3-repo-projects/blob/Selenium/Selenium%20Lab.md
+For more information on GitHub: https://github.com/CbarNC/Group3-repo-projects/blob/Selenium/Selenium%20Lab.md
 
 ### Step 1: Install a code editor
 #### Visual Studio Code
@@ -50,6 +50,18 @@ PyCharm is a popular integrated development environment (IDE) specifically desig
 4. Follow the installation wizard's instructions to install PyCharm Community. You can typically choose the installation location and whether to create desktop shortcuts during installation.
 
 5. After installation, you can launch PyCharm Community by finding it in your application menu.
+
+### Step 2: Install Behave
+You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:
+
+`pip install behave`
+![installBehave](img.png)
+
+Once installed, a "Successfully installed" message should be displayed.
+
+- For more information on behave, visit their website at: https://behave.readthedocs.io/en/latest/
+
+**Note:** If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
 
 #### WHAT IS GHERKIN?
 Gherkin is a plain-text, domain-specific language used to describe the behavior of software systems in a human-readable format. It is commonly associated with behavior-driven development (BDD) and is often used to write feature files that define the expected behavior of a software application from the user's perspective. Gherkin is designed to be easily understood by non-technical stakeholders, such as product owners, business analysts, and domain experts, as well as developers and testers.
@@ -127,3 +139,6 @@ Feature: Contact Information
     When they navigate to the "Contact" page
     Then they should find the restaurant's address, phone number, and email
 ```
+
+## FAQ (Frequently Asked Questions)
+ <a id="faq"></a>
