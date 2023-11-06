@@ -55,6 +55,7 @@ PyCharm is a popular integrated development environment (IDE) specifically desig
 You can install Selenium using Python's package manager, pip. Open your command prompt or terminal and run the following command:
 
 `pip install behave`
+
 ![installBehave](img.png)
 
 Once installed, a "Successfully installed" message should be displayed.
