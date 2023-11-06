@@ -33,24 +33,30 @@ Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-proj
 
 ### FEATURE FILE 1 (User Registration)
 
+```gherkin
+
 Feature: User Registration
   Scenario: User can register for an account
     Given the user is on the registration page
     When the user fills in their information
     And clicks the "Register" button
     Then the user should be logged in
+```
 
 ### FEATURE FILE 2 (Login Functionality)
 
+```gherkin
 Feature: Login Functionality
   Scenario: User can log in with valid credentials
     Given the user is on the login page
     When they enter valid username and password
     And click the "Login" button
     Then they should be redirected to the dashboard
+```
 
 ### FEATURE FILE 3 (Password Reset)
 
+```gherkin
 Feature: Password Reset
   Scenario: User can request a password reset
     Given the user is on the login page
@@ -58,17 +64,21 @@ Feature: Password Reset
     And provide their email address
     And submit the request
     Then they should receive a password reset email
+```
 
 ### FEATURE FILE 4 (Menu Display)
 
+```gherkin
 Feature: Menu Display
   Scenario: User can view the restaurant's menu
     Given the user is on the restaurant's homepage
     When they click on the "Menu" section
     Then they should see a list of dishes and their prices
+```
 
 ### FEATURE FILE 5 (Restaurant Reviews)
 
+```gherkin
 Feature: Restaurant Reviews
   Scenario: User can read and write restaurant reviews
     Given the user is on the restaurant's page
@@ -76,12 +86,15 @@ Feature: Restaurant Reviews
     And they read existing reviews
     And they write and submit their own review
     Then their review should be visible among the others
+```
 
 
 ### FEATURE FILE 6 (Contact Information)
 
+```gherkin
 Feature: Contact Information
   Scenario: User can find restaurant contact details
     Given the user is on the restaurant's homepage
     When they navigate to the "Contact" page
     Then they should find the restaurant's address, phone number, and email
+```
