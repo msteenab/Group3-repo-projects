@@ -31,7 +31,7 @@ Feature files are written in plain text and contain scenarios that describe the 
 ## (Do It Yourself)
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 
-### FEATURE FILE 1 (User Registration)
+### Scenario 1 (User Registration)
 
 ```gherkin
 
@@ -43,7 +43,7 @@ Feature: User Registration
     Then the user should be logged in
 ```
 
-### FEATURE FILE 2 (Login Functionality)
+### Scenario 2 (Login Functionality)
 
 ```gherkin
 Feature: Login Functionality
@@ -54,7 +54,7 @@ Feature: Login Functionality
     Then they should be redirected to the dashboard
 ```
 
-### FEATURE FILE 3 (Password Reset)
+### Scenario 3 (Password Reset)
 
 ```gherkin
 Feature: Password Reset
@@ -66,7 +66,7 @@ Feature: Password Reset
     Then they should receive a password reset email
 ```
 
-### FEATURE FILE 4 (Menu Display)
+### Scenario 4 (Menu Display)
 
 ```gherkin
 Feature: Menu Display
@@ -76,7 +76,7 @@ Feature: Menu Display
     Then they should see a list of dishes and their prices
 ```
 
-### FEATURE FILE 5 (Restaurant Reviews)
+### Scenario 5 (Restaurant Reviews)
 
 ```gherkin
 Feature: Restaurant Reviews
@@ -89,7 +89,7 @@ Feature: Restaurant Reviews
 ```
 
 
-### FEATURE FILE 6 (Contact Information)
+### Scenario 6 (Contact Information)
 
 ```gherkin
 Feature: Contact Information
