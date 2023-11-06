@@ -26,6 +26,31 @@ Behave is a Python library for behavior-driven development (BDD). BDD is a softw
 
 For more information on GitHub and Selenium: https://github.com/CbarNC/Group3-repo-projects/blob/Selenium/Selenium%20Lab.md
 
+### Step 1: Install a code editor
+#### Visual Studio Code
+- Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft
+
+1. Visit the official Visual Studio Code website: https://code.visualstudio.com/.
+
+2. On the homepage, click on the "Download" button for your operating system to download the installer.
+
+3. Once the installer is downloaded, follow the installation instructions to install VS Code. You can choose the installation location and whether to add VS Code to your PATH during installation.
+
+4. Once the installation is complete, you can launch Visual Studio Code by finding it in your Start menu or using the desktop shortcut.
+
+#### Pycharm
+- PyCharm is a popular integrated development environment (IDE) specifically designed for Python development
+
+1. Visit the JetBrains PyCharm Community page: https://www.jetbrains.com/pycharm/download/
+
+2. On the download page, you'll see an option to download PyCharm Community. Click on the "Download" button for the Community edition.
+
+3. Once the download is complete, run the installer.
+
+4. Follow the installation wizard's instructions to install PyCharm Community. You can typically choose the installation location and whether to create desktop shortcuts during installation.
+
+5. After installation, you can launch PyCharm Community by finding it in your application menu.
+
 #### WHAT IS GHERKIN?
 Gherkin is a plain-text, domain-specific language used to describe the behavior of software systems in a human-readable format. It is commonly associated with behavior-driven development (BDD) and is often used to write feature files that define the expected behavior of a software application from the user's perspective. Gherkin is designed to be easily understood by non-technical stakeholders, such as product owners, business analysts, and domain experts, as well as developers and testers.
 
