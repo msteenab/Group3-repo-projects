@@ -70,7 +70,7 @@ Once installed, a "Successfully installed" message should be displayed.
 
 **Note:** If you find that you have problems installing selenium on your computer, please navigate to the [FAQ](#faq) section of this document
 
-## Step 3 (Do It Yourself)
+## Step 3 (Do It Yourself - Write a Gherkin Feature File)
 Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-projects/
 
 ### Scenario 1 (User Registration)
@@ -140,6 +140,10 @@ Feature: Contact Information
     When they navigate to the "Contact" page
     Then they should find the restaurant's address, phone number, and email
 ```
+
+## Step 4 (Do It Yourself - Implement Step Definitions)
+
+## Step 5 (Do It Yourself - Run Behave Tests)
 
 ## FAQ (Frequently Asked Questions)
  <a id="faq"></a>
