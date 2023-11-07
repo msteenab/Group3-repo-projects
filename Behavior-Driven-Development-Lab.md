@@ -96,19 +96,7 @@ Feature: Login Functionality
     Then they should be redirected to the dashboard
 ```
 
-### Scenario 3 (Password Reset)
-
-```gherkin
-Feature: Password Reset
-  Scenario: User can request a password reset
-    Given the user is on the login page
-    When they click the "Forgot Password" link
-    And provide their email address
-    And submit the request
-    Then they should receive a password reset email
-```
-
-### Scenario 4 (Menu Display)
+### Scenario 3 (Menu Display)
 
 ```gherkin
 Feature: Menu Display
@@ -116,29 +104,6 @@ Feature: Menu Display
     Given the user is on the restaurant's homepage
     When they click on the "Menu" section
     Then they should see a list of dishes and their prices
-```
-
-### Scenario 5 (Restaurant Reviews)
-
-```gherkin
-Feature: Restaurant Reviews
-  Scenario: User can read and write restaurant reviews
-    Given the user is on the restaurant's page
-    When they scroll down to the "Reviews" section
-    And they read existing reviews
-    And they write and submit their own review
-    Then their review should be visible among the others
-```
-
-
-### Scenario 6 (Contact Information)
-
-```gherkin
-Feature: Contact Information
-  Scenario: User can find restaurant contact details
-    Given the user is on the restaurant's homepage
-    When they navigate to the "Contact" page
-    Then they should find the restaurant's address, phone number, and email
 ```
 
 ## Step 4 (Do It Yourself - Implement Step Definitions)
