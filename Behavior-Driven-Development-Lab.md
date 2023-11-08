@@ -159,7 +159,8 @@ def homePage(context):
 
 @when('they click on the "Menu" section')
 def openMenu(context):
-    context.driver.get("https://cbarnc.github.io/Group3-repo-projects/menu.html")
+    menu_button = context.driver.find_element(By.LINK_TEXT, 'MENU')
+    menu_button.click()
 
 
 @then('they should see a list of dishes and their prices')
