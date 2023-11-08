@@ -105,26 +105,41 @@ Feature: Menu Display
     When they click on the "Menu" section
     Then they should see a list of dishes and their prices
 ```
-### Scenario 4 (Password Reset)
+### Scenario 4 (Text Area | Contact Us)
 
 ```gherkin
-Feature: Password Reset
-  Scenario: User can request a password reset
-    Given the user is on the login page
-    When they click the "Forgot Password" link
-    And provide their email address
-    And submit the request
-    Then they should receive a password reset email
+Feature: Contact Us Box - Text Area
+
+  Scenario: User submits a message via the contact form
+    Given the user is on the Contact Us page
+    When the user fills in their name "John Doe"
+    And the user enters their email "johndoe@example.com"
+    And the user writes a message in the text area:
+      """
+      This is a test message.
+      """
+    And the user clicks the "Submit" button
+    Then the message should be sent successfully
 ```
 
-### Scenario 5 (Contact Information)
+### Scenario 5 (Radio Button | Contact Us)
 
 ```gherkin
-Feature: Contact Information
-  Scenario: User can find restaurant contact details
-    Given the user is on the restaurant's homepage
-    When they navigate to the "Contact" page
-    Then they should find the restaurant's address, phone number, and email
+Feature: Contact Us Box - Radio Buttons
+
+  Scenario: User selects a contact method via radio buttons
+    Given the user is on the Contact Us page
+    When the user selects the "Email" option
+    And the user enters their email "johndoe@example.com"
+    And the user clicks the "Submit" button
+    Then the email should be sent successfully
+
+  Scenario: User selects a different contact method via radio buttons
+    Given the user is on the Contact Us page
+    When the user selects the "Phone" option
+    And the user enters their phone number "123-456-7890"
+    And the user clicks the "Submit" button
+    Then the phone call should be initiated successfully
 ```
 
 ## Step 4 (Do It Yourself - Implement Step Definitions)
