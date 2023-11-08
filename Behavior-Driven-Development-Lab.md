@@ -105,6 +105,27 @@ Feature: Menu Display
     When they click on the "Menu" section
     Then they should see a list of dishes and their prices
 ```
+### Scenario 4 (Password Reset)
+
+```gherkin
+Feature: Password Reset
+  Scenario: User can request a password reset
+    Given the user is on the login page
+    When they click the "Forgot Password" link
+    And provide their email address
+    And submit the request
+    Then they should receive a password reset email
+```
+
+### Scenario 5 (Contact Information)
+
+```gherkin
+Feature: Contact Information
+  Scenario: User can find restaurant contact details
+    Given the user is on the restaurant's homepage
+    When they navigate to the "Contact" page
+    Then they should find the restaurant's address, phone number, and email
+```
 
 ## Step 4 (Do It Yourself - Implement Step Definitions)
 
