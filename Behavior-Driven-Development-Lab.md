@@ -143,6 +143,36 @@ Feature: Contact Us Box - Radio Buttons
 ```
 
 ## Step 4 (Do It Yourself - Implement Step Definitions)
+### Scenario 3 (Test Menu Display)
+```Python
+from behave import *
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+
+@given('the user is on the restaurant\'s homepage')
+def homePage(context):
+    context.driver = webdriver.Chrome()
+
+    context.driver.get("https://cbarnc.github.io/Group3-repo-projects/")
+
+
+@when('they click on the "Menu" section')
+def openMenu(context):
+    context.driver.get("https://cbarnc.github.io/Group3-repo-projects/menu.html")
+
+
+@then('they should see a list of dishes and their prices')
+def menuList(context):
+    menu_elements = context.driver.find_elements(By.CLASS_NAME, 'menu')
+    assert len(menu_elements) > 0, "No 'menu' elements found on the page"
+
+
+@then('close the browser')
+def closeBrowser(context):
+    context.driver.close()
+
+```
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
