@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Project Overview
 
 This collaborative project involves team members designing a series of Python-based labs centered around various software testing techniques. These labs emphasize code creation, comprehensive documentation, and thorough evaluation. Topics covered range from web automation using Selenium and Playwright to best practices in Behavior-Driven Development (BDD) and Test-Driven Development (TDD). Additionally, the project entails creating a Requirements Traceability Matrix for specified documents, including SRS, HLD, LLD, and Test Plan.
@@ -47,3 +48,9 @@ Tristan McGregor: Document Writer
 -	As a customer, I want to be able to apply promo codes or discounts to my order, so I can save money on my meals.
 -	As a customer, I want to rate and review the restaurant and the food after my order is delivered, so I can share my experience with others.
 -	As a customer, I want the option to reorder a previously placed order, saving me time on subsequent visits.
+=======
+How to host website using Github: http://www.youtube.com/watch?v=HboEGef55sA
+
+
+Link to Web Application being hosted on Github: https://cbarnc.github.io/Group3-repo-projects/
+>>>>>>> origin/Selenium
