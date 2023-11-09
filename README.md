@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## Project Overview
 
 This collaborative project involves team members designing a series of Python-based labs centered around various software testing techniques. These labs emphasize code creation, comprehensive documentation, and thorough evaluation. Topics covered range from web automation using Selenium and Playwright to best practices in Behavior-Driven Development (BDD) and Test-Driven Development (TDD). Additionally, the project entails creating a Requirements Traceability Matrix for specified documents, including SRS, HLD, LLD, and Test Plan.
@@ -52,4 +52,4 @@ Tristan McGregor: Document Writer
 =======
 # Team-flask
 # Team_flask
->>>>>>> 67f373228d60f049cc4ee138b8d97968957b87a3
+
