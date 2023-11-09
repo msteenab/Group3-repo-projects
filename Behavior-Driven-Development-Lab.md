@@ -104,6 +104,7 @@ Feature: Menu Display
     Given the user is on the restaurant's homepage
     When they click on the "Menu" section
     Then they should see a list of dishes and their prices
+    And close browser
 ```
 ### Scenario 4 (Text Area | Contact Us)
 
@@ -159,17 +160,16 @@ def homePage(context):
 
 @when('they click on the "Menu" section')
 def openMenu(context):
-    menu_button = context.driver.find_element(By.LINK_TEXT, 'MENU')
-    menu_button.click()
+    menuElements = context.driver.find_elements(By.CLASS_NAME, 'menu')
+    assert len(menuElements) > 0, "No menu Elements on this page"
 
 
 @then('they should see a list of dishes and their prices')
 def menuList(context):
-    menu_elements = context.driver.find_elements(By.CLASS_NAME, 'menu')
-    assert len(menu_elements) > 0, "No 'menu' elements found on the page"
+    context.driver.find_elements(By.CLASS_NAME, 'menu')
 
 
-@then('close the browser')
+@then('close browser')
 def closeBrowser(context):
     context.driver.close()
 
