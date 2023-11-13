@@ -29,6 +29,8 @@ init_db()
 # Route for the signin page
 @app.route('/signin', methods=['GET', 'POST'])
 def signin():
+    show_flash_message = False  # Flag to determine if flash message should be displayed
+
     if request.method == 'POST':
         username_or_email = request.form['username_or_email']
         password = request.form['password']
@@ -46,55 +48,52 @@ def signin():
         else:
             # Display an error message
             flash('Invalid username or password', 'error')
-    return render_template('signin.html')
+            show_flash_message = True  # Set the flag to True to show the flash message
+
+    return render_template('signin.html', show_flash_message=show_flash_message)
 
 # Route for the forgot password page
+
+
 @app.route('/forgot', methods=['GET', 'POST'])
 def forgot():
+    show_flash_message = False  # Flag to determine if flash message should be displayed
+
     if request.method == 'POST':
-        username_or_email = request.form['username or email']
-        new_password = request.form['new password']
-        confirm_new_password = request.form['confirm new password']
+        username = request.form['username']
+        new_password = request.form['new-password']
+        confirm_new_password = request.form['confirm-new-password']
 
-        conn = get_db_connection()
-        cursor = conn.cursor()
-        cursor.execute('SELECT * FROM users WHERE username = ? OR email = ?',
-                       (username_or_email, username_or_email))
-        user = cursor.fetchone()
-        conn.close()
+        # Check if the passwords match
+        if new_password != confirm_new_password:
+            flash('Passwords do not match', 'error')
+            show_flash_message = True  # Set the flag to True to show the flash message
 
-        if new_password == confirm_new_password:
-            flash('New password set', 'success')  # Display a success message
-            return redirect(url_for('signin'))
-        else:
-            # Display an error message
-            flash('Invalid username or password', 'error')
-    return render_template('forgot.html')
+    return render_template('forgot.html', show_flash_message=show_flash_message)
 
 # Route for the sign-up page
+
+
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
+    show_flash_message = False  # Flag to determine if flash message should be displayed
+
     if request.method == 'POST':
         username = request.form['username']
         email = request.form['email']
         password = request.form['password']
-        confirm_password = request.form['confirm_password']
+        confirm_password = request.form['confirm-password']
 
-        if password == confirm_password:
-            conn = get_db_connection()
-            cursor = conn.cursor()
-            cursor.execute(
-                'INSERT INTO users (username, email, password) VALUES (?, ?, ?)', (username, email, password))
-            conn.commit()
-            conn.close()
-            return redirect(url_for('signin'))
-        else:
-            # Display an error message
+        # Check if the passwords match
+        if password != confirm_password:
             flash('Passwords do not match', 'error')
-    return render_template('signup.html')
+            show_flash_message = True  # Set the flag to True to show the flash message
+
+    return render_template('signup.html', show_flash_message=show_flash_message)
 
 
 # Route for the index page
+@app.route('/')
 @app.route('/index')
 def index():
     conn = get_db_connection()
