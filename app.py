@@ -88,8 +88,36 @@ def signup():
         if password != confirm_password:
             flash('Passwords do not match', 'error')
             show_flash_message = True  # Set the flag to True to show the flash message
+        else:
+            # If passwords match, insert the user into the database
+            conn = get_db_connection()
+            cursor = conn.cursor()
+
+            # Check if the username or email already exists in the database
+            cursor.execute(
+                'SELECT * FROM users WHERE username = ? OR email = ?', (username, email))
+            existing_user = cursor.fetchone()
+
+            if existing_user:
+                flash('Username or email already exists', 'error')
+                show_flash_message = True  # Set the flag to True to show the flash message
+            else:
+                # Insert the new user into the database
+                cursor.execute('INSERT INTO users (username, email, password) VALUES (?, ?, ?)',
+                               (username, email, password))
+                conn.commit()
+                flash('Signup successful', 'success')
+                return redirect(url_for('index'))
+
+            conn.close()
 
     return render_template('signup.html', show_flash_message=show_flash_message)
+
+
+# ... (other routes and functions remain unchanged)
+
+if __name__ == '__main__':
+    app.run(debug=True)
 
 
 # Route for the index page
