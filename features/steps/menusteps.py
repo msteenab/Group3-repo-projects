@@ -17,9 +17,11 @@ def openMenu(context):
 
 @then('they should see a list of dishes and their prices')
 def menuList(context):
-    context.driver.find_elements(By.CLASS_NAME, 'menu')
+    menuElements = context.driver.find_elements(By.CLASS_NAME, 'menu')
+    assert len(menuElements) > 0, "No menu Elements on this page"
 
 
-@then(u'close browser')
+@then('close browser')
 def closeBrowser(context):
     context.driver.close()
+
