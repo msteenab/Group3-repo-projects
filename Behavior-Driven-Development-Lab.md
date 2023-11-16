@@ -300,3 +300,5 @@ def closeBrowser(context):
     - It closes the browser using `context.driver.close()`
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
+
+- In order for you to run the behave test you must __
