@@ -83,6 +83,7 @@ Feature: User Registration
     And clicks the "Register" button
     Then the user should be logged in
 ```
+- This feature file includes syntax on how a user can register for an account on our website
 
 ### Scenario 2 (Login Functionality)
 
@@ -94,6 +95,7 @@ Feature: Login Functionality
     And click the "Login" button
     Then they should be redirected to the dashboard
 ```
+- This feature file includes syntax on how a user can log into an account on our website
 
 ### Scenario 3 (Menu Display)
 
@@ -105,6 +107,8 @@ Feature: Menu Display
     Then they should see a list of dishes and their prices
     And close browser
 ```
+- This feature file includes syntax on how a user can display the restaurant menu on our website
+
 ### Scenario 4 (Text Area | Contact Us)
 
 ```gherkin
@@ -120,6 +124,7 @@ Feature: Contact Us Box - Text Area
     And the user clicks the "Submit" button
     Then the message should be sent successfully
 ```
+- This feature file includes syntax on how a user can input text in the "contact us" text area on our website
 
 ### Scenario 5 (Radio Button | Contact Us)
 
@@ -138,9 +143,10 @@ Feature: Contact Us Box - Radio Buttons
     And the user clicks the "Submit" button
     Then the phone call should be initiated successfully
 ```
+- This feature file includes syntax on how a user can select different types of radio buttons in the "contact us" section on our website
 
 ## Step 4 (Do It Yourself - Implement Step Definitions)
-### Scenario 1 (Test Registration
+### Scenario 1 (Test Registration)
 ```Python
 from behave import *
 from selenium import webdriver
@@ -175,7 +181,7 @@ def user_login(context):
 
     context.webdriver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
 ```
-### Scenario 2 (Test Lgoin)
+### Scenario 2 (Test Login)
 
 ```Python
 from behave import *
