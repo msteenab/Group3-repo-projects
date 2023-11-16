@@ -419,6 +419,11 @@ def radio_status(context):
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
-- In order for you to run the behave test you must __
+- In order for you to run the behave test you must be in the terminal of your code editor
 
+## FAQ (Frequently Asked Questions)
+ <a id="faq"></a>
 
+### Installing Packages
+
+### Feature File Path
