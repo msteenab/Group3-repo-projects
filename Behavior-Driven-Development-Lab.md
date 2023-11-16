@@ -245,6 +245,8 @@ def redirect(context):
 
 ### Scenario 3 (Test Menu Display)
 ```Python
+import time
+
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -258,13 +260,16 @@ def homePage(context):
 
 @when('they click on the "Menu" section')
 def openMenu(context):
-    menuElements = context.driver.find_elements(By.CLASS_NAME, 'menu')
-    assert len(menuElements) > 0, "No menu Elements on this page"
+    menu_button = context.driver.find_element(By.LINK_TEXT, 'MENU')
+    menu_button.click()
+    time.sleep(2)
 
 
 @then('they should see a list of dishes and their prices')
 def menuList(context):
-    context.driver.find_elements(By.CLASS_NAME, 'menu')
+    menu_elements = context.driver.find_elements(By.CLASS_NAME, 'menu')
+    assert len(menu_elements) > 0, "No 'menu' elements found on the page"
+    time.sleep(2)
 
 
 @then('close browser')
