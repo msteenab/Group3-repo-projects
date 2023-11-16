@@ -203,6 +203,7 @@ def user_login(context):
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 @given('the user is on the login page')
 def loginPage(context):
@@ -310,7 +311,6 @@ def emptyComments(context):
     screenshot = Image.open(img_url)
     screenshot.show()
 
-
 @when(u'The user selects the input box and types a message')
 def testMessage(context):
     sendMessage = "This is a Test Message"
@@ -321,13 +321,29 @@ def testMessage(context):
                                   load_wait_time=0)
     print(img_url2)
 
-
 # takes a screenshot of message user wrote
 @then(u'The comment box is filled')
 def messageStatus(context):
     screenshot = Image.open("myimage.png")
     screenshot.show()
 ```
+
+### BREAKDOWN 4 -
+
+- **Import Statements**
+    - `Screenshot`: Module for taking screenshots
+    - `Image`: From the Python Imaging Library (PIL): Used for working with images
+- **Step Definitions**
+  - *emptyComments*
+    - The `@given` decorator, represents the context of the test
+    - It opens a Chrome browser, navigates to a specific URL, and asserts that the comments box is initially empty
+    - It uses the `Screenshot` class to capture a screenshot and display it using PIL
+  - *testMessage*
+    - The `@when` decorator, represents the action of the user selecting the input box and typing a message
+    - It captures a screenshot after the user has typed a message using the `Screenshot` class
+  - *messageStatus*
+    - The `@then` decorator, represents the expected outcome of the test, where the application takes a screenshot of what the user wrote
+    - This is a visual check to confirm that the comments box is filled as expected
 
 ### Scenario 5 ( Radio Button | Contact Us)
 ```Python
@@ -336,7 +352,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 from PIL import Image
-
 
 @given(u'user on contact us section')
 def contactUs(context):
@@ -361,6 +376,21 @@ def radioStatus(context):
     screenshot = Image.open("screenshot-2.png")
     screenshot.show()
 ```
+
+### BREAKDOWN 5 -
+
+- **Step Definitions**
+  - *contactUs*
+    - The `@given` decorator, represents the context of the test
+    - It opens a Chrome browser, navigates to a specific URL
+  - *selectButton*
+    - The `@when` decorator, represents the action of the user selecting the "yes" radio button
+    - It finds elements on the page with the name "T3C_member"
+    - The application iterates through them, and clicks the one with the value "yes". It then sleeps for 2 seconds
+  - *radioStatus*
+    - The `@then` decorator, represents the expected outcome of the test, where the user should see the "yes" radio button selected
+    - It opens the specified URL and then attempts to open a screenshot file named "screenshot-2.png" using PIL and displays it
+
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
 - In order for you to run the behave test you must __
