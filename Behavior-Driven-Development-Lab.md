@@ -258,13 +258,14 @@ def homePage(context):
 
 @when('they click on the "Menu" section')
 def openMenu(context):
-    menuElements = context.driver.find_elements(By.CLASS_NAME, 'menu')
-    assert len(menuElements) > 0, "No menu Elements on this page"
+    menu_button = context.driver.find_element(By.LINK_TEXT, 'MENU')
+    menu_button.click()
 
 
 @then('they should see a list of dishes and their prices')
 def menuList(context):
-    context.driver.find_elements(By.CLASS_NAME, 'menu')
+    menu_elements = context.driver.find_elements(By.CLASS_NAME, 'menu')
+    assert len(menu_elements) > 0, "No 'menu' elements found on the page"
 
 
 @then('close browser')
