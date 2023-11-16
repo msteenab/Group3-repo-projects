@@ -76,7 +76,6 @@ Website used for these demonstrations: https://cbarnc.github.io/Group3-repo-proj
 ### Scenario 1 (User Registration)
 
 ```gherkin
-
 Feature: User Registration
   Scenario: User can register for an account
     Given the user is on the registration page
@@ -110,7 +109,6 @@ Feature: Menu Display
 
 ```gherkin
 Feature: Contact Us Box - Text Area
-
   Scenario: User submits a message via the contact form
     Given the user is on the Contact Us page
     When the user fills in their name "John Doe"
@@ -127,14 +125,12 @@ Feature: Contact Us Box - Text Area
 
 ```gherkin
 Feature: Contact Us Box - Radio Buttons
-
   Scenario: User selects a contact method via radio buttons
     Given the user is on the Contact Us page
     When the user selects the "Email" option
     And the user enters their email "johndoe@example.com"
     And the user clicks the "Submit" button
     Then the email should be sent successfully
-
   Scenario: User selects a different contact method via radio buttons
     Given the user is on the Contact Us page
     When the user selects the "Phone" option
