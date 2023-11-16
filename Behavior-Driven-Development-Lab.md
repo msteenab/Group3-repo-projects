@@ -299,6 +299,80 @@ def closeBrowser(context):
     - The `@then` decorator, represents the expected outcome of the test, where the browser should be closed
     - It closes the browser using `context.driver.close()`
 
+### Scenario 4 (Text Area | Contact US)
+```Python
+import time
+from Screenshot import *
+from behave import *
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from PIL import Image
+
+
+@given(u'The comments box is empty')
+def emptyComments(context):
+    context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
+    context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
+    assert context.driver.find_element(By.ID, 'comments').text == ''
+    # takes a screenshot of the empty text area before user writes
+    ob = Screenshot.Screenshot()
+    img_url = ob.full_screenshot(context.driver, save_path=r'.', image_name='myimage2.png', is_load_at_runtime=True,
+                                 load_wait_time=0)
+    screenshot = Image.open(img_url)
+    screenshot.show()
+
+
+@when(u'The user selects the input box and types a message')
+def testMessage(context):
+    sendMessage = "This is a Test Message"
+    context.driver.find_element(By.ID, 'comments').send_keys(sendMessage)
+    time.sleep(3)
+    ob = Screenshot.Screenshot()
+    img_url2 = ob.full_screenshot(context.driver, save_path=r'.', image_name='myimage.png', is_load_at_runtime=True,
+                                  load_wait_time=0)
+    print(img_url2)
+
+
+# takes a screenshot of message user wrote
+@then(u'The comment box is filled')
+def messageStatus(context):
+    screenshot = Image.open("myimage.png")
+    screenshot.show()
+```
+
+### Scenario 5 ( Radio Button | Contact Us)
+```Python
+from behave import *
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+import time
+from PIL import Image
+
+
+@given(u'user on contact us section')
+def contactUs(context):
+    context.driver = webdriver.Chrome()
+    context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
+
+
+@when(u'the selects the Yes Radio button')
+def selectButton(context):
+    radio_list = context.driver.find_elements(By.NAME, "T3C_member")
+    for radioButton in radio_list:
+        radioButton_t = radioButton.get_attribute("value")
+        if radioButton_t == "yes":
+            radioButton.click()
+        time.sleep(2)
+
+
+@then(u'the user should see radio button yes selected')
+def radioStatus(context):
+    url = "https://cbarnc.github.io/Group3-repo-projects/"
+    context.driver.get(url)
+    screenshot = Image.open("screenshot-2.png")
+    screenshot.show()
+```
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
 - In order for you to run the behave test you must __
