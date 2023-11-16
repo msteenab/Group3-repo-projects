@@ -162,9 +162,9 @@ def user_on_registration(context):
     context.driver = webdriver.Chrome()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
     create_account_link = context.driver.find_element(By.ID, "linkCreateAccount")
-
     create_account_link.click()
     time.sleep(5)
+    
 @when('the user fills in their information')
 def user_fills_information(context):
     confirm_username = context.driver.find_element(By.ID, "signupUsername")
@@ -193,19 +193,19 @@ def user_login(context):
     - `Keys`: Module that allows for keyboard interactions
     - `time`: Module that deals with time 
 - **Step Definitions** 
-  - *User_On_Registration*
+  - *user_on_registration*
     - The `@given` decorator, represents the context of the test
     - It opens a Chrome web browser using Selenium's `webdriver.Chrome()` and navigates to a specific URL
     - It finds an element on the page with the ID "linkCreateAccount" and clicks on it
     - It then adds a delay of 5 seconds using `time.sleep(5)`
-  - *User_Fills_Information*
+  - *user_fills_information*
     - The `@when` decorator, represents the action of the user filling in their information
     - It finds elements on the page with the IDs "signupUsername" and "signupEmail" and enters values into them
     - It adds delays of 5 seconds between actions
-  - *Click_Register*
+  - *click_register*
     - The `@when` decorator, represents the action of the user clicking the "Register" button
     - It finds an element on the page with the ID "submit-button" and clicks on it
-  - *User_Login*
+  - *user_login*
     - The `@then` decorator, represents the expected outcome of the test, where the user should be logged in
     - It navigates to the login page using `context.driver.get()`
 
@@ -219,14 +219,12 @@ from selenium.webdriver.common.by import By
 @given('the user is on the login page')
 def loginPage(context):
     context.driver = webdriver.Chrome()
-
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/signIn.html")
 
 @when('they enter valid username and password')
 def userPass(context):
-    username_input = context.driver.find_element_by_id('username')
-    password_input = context.driver.find_element_by_id('password')
-
+    username_input = context.driver.find_elements(By.ID, 'username')
+    password_input = context.driver.find_elements(By.ID, 'password')
     username_input.send_keys('test_user123')
     password_input.send_keys('password123')
 
@@ -240,6 +238,22 @@ def redirect(context):
     current_url = context.driver.current_url
     assert current_url == 'https://cbarnc.github.io/Group3-repo-projects/'
 ```
+### BREAKDOWN 2 -
+
+- **Step Definitions**
+  - *loginPage*
+    - The `@given` decorator, represents the context of the test
+    - It opens a Chrome web browser using Selenium's `webdriver.Chrome()` and navigates to a specific URL
+  - *userPass*
+    - The `@when` decorator, represents the action of the user entering their username and password
+    - It finds elements on the page with the IDs "username" and "password" and enters values into them
+  - *clickLogin*
+    - The `@when` decorator, represents the action of the user clicking the "Login" button
+    - It finds an element on the page with the ID "login_button" and clicks on it
+  - *redirect*
+    - The `@then` decorator, represents the expected outcome of the test, where the user should be redirected to the dashboard
+    - It navigates to the homepage using `context.driver.current_url`
+
 ### Scenario 3 (Test Menu Display)
 ```Python
 from behave import *
@@ -250,7 +264,6 @@ from selenium.webdriver.common.by import By
 @given('the user is on the restaurant\'s homepage')
 def homePage(context):
     context.driver = webdriver.Chrome()
-
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 
 
@@ -270,8 +283,20 @@ def closeBrowser(context):
     context.driver.close()
 
 ```
+### BREAKDOWN 3 -
+
+- **Step Definitions**
+  - *homePage*
+    - The `@given` decorator, represents the context of the test
+    - It opens a Chrome web browser using Selenium's `webdriver.Chrome()` and navigates to a specific URL
+  - *openMenu*
+    - The `@when` decorator, represents the action of the user clicking the "Menu" section
+    - It finds elements on the page with the class name "menu" and "password" and enters values into them
+  - *clickLogin*
+    - The `@then` decorator, represents the action of the user clicking the "Login" button
+    - It finds an element on the page with the ID "login_button" and clicks on it
+  - *redirect*
+    - The `@then` decorator, represents the expected outcome of the test, where the user should be redirected to the dashboard
+    - It navigates to the homepage using `context.driver.current_url`
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
-
-## FAQ (Frequently Asked Questions)
- <a id="faq"></a>
