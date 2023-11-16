@@ -1,9 +1,10 @@
 from behave import *
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 import time
-##########NOT FINISHED#######
+
+
+# NOT FINISHED
 @given('the user is on the registration page')
 def user_on_registration(context):
     context.driver = webdriver.Chrome()
