@@ -291,12 +291,12 @@ def closeBrowser(context):
     - It opens a Chrome web browser using Selenium's `webdriver.Chrome()` and navigates to a specific URL
   - *openMenu*
     - The `@when` decorator, represents the action of the user clicking the "Menu" section
-    - It finds elements on the page with the class name "menu" and "password" and enters values into them
-  - *clickLogin*
-    - The `@then` decorator, represents the action of the user clicking the "Login" button
-    - It finds an element on the page with the ID "login_button" and clicks on it
-  - *redirect*
-    - The `@then` decorator, represents the expected outcome of the test, where the user should be redirected to the dashboard
-    - It navigates to the homepage using `context.driver.current_url`
+    - It finds elements on the page with the class name "menu" and determines whether the menu page has items or not
+  - *menuList*
+    - The `@then` decorator, represents the action of the user seeing a list of menu dishes and their prices
+    - It finds an element on the page with the class name 'menu'
+  - *closeBrowser*
+    - The `@then` decorator, represents the expected outcome of the test, where the browser should be closed
+    - It closes the browser using `context.driver.close()`
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
