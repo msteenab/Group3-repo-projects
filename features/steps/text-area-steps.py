@@ -6,8 +6,8 @@ from selenium.webdriver.common.by import By
 from PIL import Image
 
 
-@given(u'The comments box is empty')
-def emptyComments(context):
+@given('The comments box is empty')
+def empty_comments(context):
     context.driver = webdriver.Chrome()
     context.driver.maximize_window()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
@@ -21,7 +21,7 @@ def emptyComments(context):
 
 
 @when(u'The user selects the input box and types a message')
-def testMessage(context):
+def test_message(context):
     sendMessage = "This is a Test Message"
     context.driver.find_element(By.ID, 'comments').send_keys(sendMessage)
     time.sleep(3)
@@ -33,6 +33,6 @@ def testMessage(context):
 
 # takes a screenshot of message user wrote
 @then(u'The comment box is filled')
-def messageStatus(context):
+def message_status(context):
     screenshot = Image.open("myimage.png")
     screenshot.show()

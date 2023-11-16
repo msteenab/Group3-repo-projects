@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 @given('the user is on the restaurant\'s homepage')
 def home_page(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 
 

@@ -7,6 +7,7 @@ import time
 @given('the user is on the login page')
 def login_page(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/signIn.html")
 
 

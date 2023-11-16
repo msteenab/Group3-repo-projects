@@ -148,6 +148,7 @@ import time
 @given('the user is on the registration page')
 def user_on_registration(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
     create_account_link = context.driver.find_element(By.ID, "linkCreateAccount")
     create_account_link.click()
@@ -215,6 +216,7 @@ import time
 @given('the user is on the login page')
 def login_page(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/signIn.html")
 
 
@@ -267,6 +269,7 @@ from selenium.webdriver.common.by import By
 @given('the user is on the restaurant\'s homepage')
 def home_page(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/")
 
 
@@ -316,8 +319,8 @@ from selenium.webdriver.common.by import By
 from PIL import Image
 
 
-@given(u'The comments box is empty')
-def emptyComments(context):
+@given('The comments box is empty')
+def empty_comments(context):
     context.driver = webdriver.Chrome()
     context.driver.maximize_window()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
@@ -329,8 +332,9 @@ def emptyComments(context):
     screenshot = Image.open(img_url)
     screenshot.show()
 
+
 @when(u'The user selects the input box and types a message')
-def testMessage(context):
+def test_message(context):
     sendMessage = "This is a Test Message"
     context.driver.find_element(By.ID, 'comments').send_keys(sendMessage)
     time.sleep(3)
@@ -339,11 +343,13 @@ def testMessage(context):
                                   load_wait_time=0)
     print(img_url2)
 
+
 # takes a screenshot of message user wrote
 @then(u'The comment box is filled')
-def messageStatus(context):
+def message_status(context):
     screenshot = Image.open("myimage.png")
     screenshot.show()
+
 ```
 
 ### BREAKDOWN 4 -
@@ -371,28 +377,30 @@ from selenium.webdriver.common.by import By
 import time
 from PIL import Image
 
-@given(u'user on contact us section')
-def contactUs(context):
+
+@given('user on contact us section')
+def contact_us(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
 
 
-@when(u'the selects the Yes Radio button')
-def selectButton(context):
+@when('the selects the Yes Radio button')
+def select_button(context):
     radio_list = context.driver.find_elements(By.NAME, "T3C_member")
     for radioButton in radio_list:
         radioButton_t = radioButton.get_attribute("value")
         if radioButton_t == "yes":
             radioButton.click()
-        time.sleep(2)
+            time.sleep(2)
 
 
-@then(u'the user should see radio button yes selected')
-def radioStatus(context):
-    url = "https://cbarnc.github.io/Group3-repo-projects/"
-    context.driver.get(url)
+@then('the user should see radio button yes selected')
+def radio_status(context):
+    context.driver.get("https://cbarnc.github.io/Group3-repo-projects/")
     screenshot = Image.open("screenshot-2.png")
     screenshot.show()
+
 ```
 
 ### BREAKDOWN 5 -
@@ -412,3 +420,5 @@ def radioStatus(context):
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
 - In order for you to run the behave test you must __
+
+

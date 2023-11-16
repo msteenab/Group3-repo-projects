@@ -7,6 +7,7 @@ import time
 @given('the user is on the registration page')
 def user_on_registration(context):
     context.driver = webdriver.Chrome()
+    context.driver.maximize_window()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
     create_account_link = context.driver.find_element(By.ID, "linkCreateAccount")
     create_account_link.click()
