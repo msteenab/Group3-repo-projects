@@ -113,35 +113,23 @@ Feature: Menu Display
 
 ```gherkin
 Feature: Contact Us Box - Text Area
-  Scenario: User submits a message via the contact form
-    Given the user is on the Contact Us page
-    When the user fills in their name "John Doe"
-    And the user enters their email "johndoe@example.com"
-    And the user writes a message in the text area:
-      """
-      This is a test message.
-      """
-    And the user clicks the "Submit" button
-    Then the message should be sent successfully
+
+  Scenario: Test the text box area
+      Given The comments box is empty
+      When The user selects the input box and types a message
+      Then The comment box is filled
 ```
 - This feature file includes syntax on how a user can input text in the "contact us" text area on our website
 
 ### Scenario 5 (Radio Button | Contact Us)
 
 ```gherkin
-Feature: Contact Us Box - Radio Buttons
-  Scenario: User selects a contact method via radio buttons
-    Given the user is on the Contact Us page
-    When the user selects the "Email" option
-    And the user enters their email "johndoe@example.com"
-    And the user clicks the "Submit" button
-    Then the email should be sent successfully
-  Scenario: User selects a different contact method via radio buttons
-    Given the user is on the Contact Us page
-    When the user selects the "Phone" option
-    And the user enters their phone number "123-456-7890"
-    And the user clicks the "Submit" button
-    Then the phone call should be initiated successfully
+Feature: Radio Button
+  Scenario: Selecting Radio Button Yes
+    Given user on contact us section
+    When the selects the Yes Radio button
+    Then the user should see radio button yes selected
+
 ```
 - This feature file includes syntax on how a user can select different types of radio buttons in the "contact us" section on our website
 
