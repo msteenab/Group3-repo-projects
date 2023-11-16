@@ -145,7 +145,10 @@ Feature: Contact Us Box - Radio Buttons
 ```
 - This feature file includes syntax on how a user can select different types of radio buttons in the "contact us" section on our website
 
-## Step 4 (Do It Yourself - Implement Step Definitions)
+## Step 4 (Do It Yourself - Implement Step Definitions
+
+- In order for us to implement our feature files for automated testing, we have to create step definitions with the behave and selenium libraries in python
+
 ### Scenario 1 (Test Registration)
 ```Python
 from behave import *
@@ -178,9 +181,34 @@ def click_register(context):
 
 @then('the user should be logged in')
 def user_login(context):
-
-    context.webdriver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
+    context.driver.get('https://cbarnc.github.io/Group3-repo-projects/signIn.html')
 ```
+### BREAKDOWN 1 -
+
+- **Import Statements**
+    - `behave`: The behave library
+    - `selenium`: The web testing library
+    - `webdriver`: The WebDriver module for implementation
+    - `By`: Module that allows for locating elements on a webpage
+    - `Keys`: Module that allows for keyboard interactions
+    - `time`: Module that deals with time 
+- **Step Definitions** 
+  - *User_On_Registration*
+    - The `@given` decorator, represents the context of the test
+    - It opens a Chrome web browser using Selenium's `webdriver.Chrome()` and navigates to a specific URL
+    - It finds an element on the page with the ID "linkCreateAccount" and clicks on it
+    - It then adds a delay of 5 seconds using `time.sleep(5)`
+  - *User_Fills_Information*
+    - The `@when` decorator, represents the action of the user filling in their information
+    - It finds elements on the page with the IDs "signupUsername" and "signupEmail" and enters values into them
+    - It adds delays of 5 seconds between actions
+  - *Click_Register*
+    - The `@when` decorator, represents the action of the user clicking the "Register" button
+    - It finds an element on the page with the ID "submit-button" and clicks on it
+  - *User_Login*
+    - The `@then` decorator, represents the expected outcome of the test, where the user should be logged in
+    - It navigates to the login page using `context.driver.get()`
+
 ### Scenario 2 (Test Login)
 
 ```Python
