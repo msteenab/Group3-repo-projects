@@ -4,24 +4,24 @@ from selenium.webdriver.common.by import By
 
 
 @given('the user is on the login page')
-def loginPage(context):
+def login_page(context):
     context.driver = webdriver.Chrome()
 
     context.driver.get("https://cbarnc.github.io/Group3-repo-projects/signIn.html")
 
 
 @when('they enter valid username and password')
-def userPass(context):
-    username_input = context.driver.find_element_by_id('username')
-    password_input = context.driver.find_element_by_id('password')
+def user_pass(context):
+    username_input = context.driver.find_elements(By.ID, 'username')
+    password_input = context.driver.find_elements(By.ID, 'password')
 
     username_input.send_keys('test_user123')
     password_input.send_keys('password123')
 
 
 @when('click the "Login" button')
-def clickLogin(context):
-    login_button = context.driver.find_element_by_id('login_button')
+def click_login(context):
+    login_button = context.driver.find_elements(By.ID, 'login_button')
     login_button.click()
 
 
