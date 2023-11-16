@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import time
 
+
 @given('the user is on the registration page')
 def user_on_registration(context):
     context.driver = webdriver.Chrome()
@@ -12,6 +13,8 @@ def user_on_registration(context):
 
     create_account_link.click()
     time.sleep(5)
+
+
 @when('the user fills in their information')
 def user_fills_information(context):
     confirm_username = context.driver.find_element(By.ID, "signupUsername")
@@ -21,10 +24,12 @@ def user_fills_information(context):
     confirm_email.send_keys("johndoe@example.com")
     time.sleep(5)
 
+
 @when('clicks the "Register" button')
 def click_register(context):
     submit_confirm = context.driver.find_element(By.ID, "submit-button")
     submit_confirm.click()
+
 
 @then('the user should be logged in')
 def user_login(context):
