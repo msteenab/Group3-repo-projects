@@ -133,7 +133,7 @@ Feature: Radio Button
 ```
 - This feature file includes syntax on how a user can select different types of radio buttons in the "contact us" section on our website
 
-## Step 4 (Do It Yourself - Implement Step Definitions
+## Step 4 (Do It Yourself - Implement Step Definitions)
 
 - In order for us to implement our feature files for automated testing, we have to create step definitions with the behave and selenium libraries in python
 
