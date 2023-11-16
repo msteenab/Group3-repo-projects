@@ -6,13 +6,12 @@ from PIL import Image
 
 
 @given(u'user on contact us section')
-def contactUs(context):
+def contact_us(context):
     context.driver = webdriver.Chrome()
     context.driver.get('https://cbarnc.github.io/Group3-repo-projects/')
 
-
 @when(u'the selects the Yes Radio button')
-def selectButton(context):
+def select_button(context):
     radio_list = context.driver.find_elements(By.NAME, "T3C_member")
     for radioButton in radio_list:
         radioButton_t = radioButton.get_attribute("value")
