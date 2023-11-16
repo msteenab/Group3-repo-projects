@@ -419,7 +419,23 @@ def radio_status(context):
 
 ## Step 5 (Do It Yourself - Run Behave Tests)
 
-- In order for you to run the behave test you must be in the terminal of your code editor
+- In order for you to run your behave tests you must be in the terminal of your code editor
+
+The command for running your tests are below:
+
+`behave features\"Feature File Name"`
+
+## Feature File Screenshots
+
+### Registration
+
+### Login
+
+### Menu Display
+
+### Text-Area (Contact Us)
+
+### Radio-Button (Contact Us)
 
 ## FAQ (Frequently Asked Questions)
  <a id="faq"></a>
