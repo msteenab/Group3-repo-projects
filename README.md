@@ -36,7 +36,7 @@ This collaborative project involves team members designing a series of Python-ba
 |   23 Sep - 4 Oct  | 05 Oct - 25 Oct  |  18 Nov - 4 Dec   |  29 Nov - 5 Dec   |
 | Readme.md established  | Requirements Tracability Matrix (RTM)| Project Documentation Review| Group Project Labs|
 | 1st Peer Evals | 2nd Peer Evals | 3rd Peer Evals | 4th Peer Evals - Group Project Eval |
-| 1st Status Review (Oct, 06)| 2nd Status Review (Oct, 20) | 3rd Status Review (Nov, 28)| 4th Status Review (Dec, 5)|
+| 1st Status Review (Oct, 06)| 2nd Status Review (Oct, 20) | 3rd Status Review (Nov, 24)| 4th Status Review (---)|
 
 ## The Idea
 Our initial idea was to create a restaurant website that has the following pages:
