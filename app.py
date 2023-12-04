@@ -114,6 +114,8 @@ def signup():
     return render_template('signup.html', show_flash_message=show_flash_message)
 
 
+# ... (other routes and functions remain unchanged)
+
 
 # Route for the index page
 @app.route('/')
@@ -126,9 +128,9 @@ def index():
 
 
 # Route for serving static files (CSS, JS, images, etc.)
-@app.route('/<path:filename>')
+@app.route('/static/<path:filename>')
 def serve_static(filename):
-    return send_from_directory(filename)
+    return send_from_directory('static', filename)
 
 
 # Route for "about.html" page
