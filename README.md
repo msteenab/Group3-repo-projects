@@ -17,7 +17,7 @@ This collaborative project involves team members designing a series of Python-ba
 - Kameron Smith
 - John Moukas
 
-Collectively, we all had the following roles:
+## Roles
 - Document writing
 - Developing
 - Testing
