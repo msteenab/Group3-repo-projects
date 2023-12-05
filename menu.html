@@ -3,10 +3,10 @@
 
 <head>
     <title>Menu Page</title>
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+    <link rel="stylesheet" href="css/style.css" />
     <style>
         body {
-            background-image: url("{{ url_for('static', filename='images/food-pic.jpg') }}");
+            background-image: url("images/food-pic.jpg");
             /* other styles */
         }
     </style>
@@ -15,13 +15,13 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="{{ url_for('static', filename='images/team-3-cusine.png') }}" alt="Logo" width="100" height="100">
+            <img src="images/team-3-cusine.png" alt="Logo" width="100" height="100">
             <nav>
                 <ul>
-                    <li><a href="{{ url_for('index') }}">HOME</a></li>
-                    <li><a href="{{ url_for('about') }}">ABOUT</a></li>
-                    <li><a href="{{ url_for('menu') }}" class="current">MENU</a></li>
-                    <li><a href="{{ url_for('signin') }}">SIGN IN</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="menu.html" class="current">MENU</a></li>
+                    <li><a href="signin.html">SIGN IN</a></li>
                 </ul>
             </nav>
         </header>
