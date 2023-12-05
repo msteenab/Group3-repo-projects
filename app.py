@@ -117,7 +117,6 @@ def signup():
 
 # Route for the index page
 @app.route('/')
-@app.route('/index')
 def index():
     conn = get_db_connection()
     posts = conn.execute('SELECT * FROM posts').fetchall()

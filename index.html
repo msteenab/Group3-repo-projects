@@ -2,8 +2,18 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+
     <title> Cuisine Page </title>
-    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <style>
+        body {
+            background-image: url("static/images/food-pic.jpg");
+            /* other styles */
+        }
+    </style>
+
+
     <!--[if lt IE 9]>
     <![endif]-->
     <script type="text/javascript">
@@ -18,22 +28,22 @@
 <body>
     <div class="wrapper">
         <header>
-            <image src="{{url_for('static', filename='team-3-cusine.png')}}" alt="Logo" width="100" height="100">
-                </image>
+            <img src="static/images/team-3-cusine.png" alt="Logo" width="100" height="100">
             <nav>
                 <ul>
                     <li><a href="index.html" class="current">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="menu.html">MENU</a></li>
-                    <li><a href="signIn.html">SIGN IN</a></li>
+                    <li><a href="signin.html">SIGN IN</a></li>
                 </ul>
             </nav>
         </header>
         <section class="courses">
             <article>
                 <figure>
-                     <image src="{{url_for('static', filename='food-pic1.jpg')}}" alt="Logo" width="280" height="280">
-                </image>
+                    <image src="static/images/food-pic1.jpg" alt="Logo" width="280"
+                        height="280">
+                    </image>
                     <figcaption>Chef's Dinner</figcaption>
                 </figure>
                 <hgroup>
@@ -47,8 +57,9 @@
             </article>
             <article>
                 <figure>
-                     <image src="{{url_for('static', filename='food-pic2.jpg')}}" alt="Logo" width="280" height="280">
-                </image>
+                    <image src="static/images/food-pic2.jpg" alt="Logo" width="280"
+                        height="280">
+                    </image>
                     <figcaption>More Dinner</figcaption>
                 </figure>
                 <hgroup>
@@ -110,7 +121,3 @@
 </body>
 
 </html>
-
-
-
-
