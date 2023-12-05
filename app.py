@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for, flash, sen
 
 import sqlite3
 
-
 app = Flask(__name__)
 app.secret_key = "mahsjdshdssdkdd_ncjdjkl"
 
@@ -52,6 +51,7 @@ def signin():
 
     return render_template('signin.html', show_flash_message=show_flash_message)
 
+
 # Route for the forgot password page
 
 
@@ -70,6 +70,7 @@ def forgot():
             show_flash_message = True  # Set the flag to True to show the flash message
 
     return render_template('forgot.html', show_flash_message=show_flash_message)
+
 
 # Route for the sign-up page
 
@@ -112,9 +113,6 @@ def signup():
             conn.close()
 
     return render_template('signup.html', show_flash_message=show_flash_message)
-
-
-# ... (other routes and functions remain unchanged)
 
 
 # Route for the index page
